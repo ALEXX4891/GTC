@@ -127,48 +127,10 @@ legend {
 
 // end reset
 
-$color-black: #222;
-$color-brown: #570000;
-$color-red: red;
-$color-gray: #d2d2d2;
-$color-555A5E: #555a5e;
-$color-B3DBFF: #b3dbff;
-$color-36C1C9: #36c1c9;
-$color-37CBD3: #37cbd3;
-$color-2FA7BE: #2fa7be;
-$color-2DA1B7: #2da1b7;
-$color-828282: #828282;
-$color-268AB1: #268ab1;
-$color-34343B: #34343b;
-$color-5F5F69: #5f5f69;
-$color-2073A8: #2073a8;
-$color-56565E: #56565e;
-$color-0FA5AD: #0fa5ad;
-$color-B02525: #b02525;
-$color-005D6F: #005d6f;
-$color-F3FAFC: #f3fafc;
-$color-F3FAFC: #f3fafc;
-$color-1F71A2: #1f71a2;
-$color-606060: #606060;
-$color-BDBDBD: #bdbdbd;
-$color-333333: #333333;
-$color-1F384F: #1f384f;
-$color-62CDB4: #62cdb4;
-// #136E63: #136e63;
-// #898994: #898994;
-// #3A3A42: #3a3a42;
-// #89899A: #89899a;
-// #56693E: #56693e;
-// #363636: #363636;
-// #A9A9A9: #A9A9A9;
-// $color-8C8C8C: #8C8C8C;
-// #BABABA: #BABABA;
-
 // @include center
 @mixin center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
 }
 
 // // Шрифты:
@@ -184,11 +146,12 @@ $color-62CDB4: #62cdb4;
 
 body {
   position: relative;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-family: OpenSans;
   font-size: 16px;
-  line-height: 110%;
-  // background-color: $color-F9F9F9;
+  font-weight: 400;
+  line-height: 21.79px;
+  text-align: left;
+  color: #585858;
 }
 
 html {
@@ -203,20 +166,23 @@ h5,
 p {
   margin: 0;
 }
+
 html {
   box-sizing: border-box;
 }
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 input {
   padding: 0;
 }
 
 a {
-  color: $color-black;
+  color: #000;
   text-decoration: none;
 }
 
@@ -248,7 +214,7 @@ a {
 }
 
 .container {
-  max-width: 1714px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -313,7 +279,7 @@ a {
   &.btn_white {
     border-color: #F0FDFB;
     background: #F0FDFB;
-    color: rgba($color: #117074, $alpha: 0.5);
+    color: rgba(#117074, 0.5);
 
 
     &:hover {
@@ -613,18 +579,12 @@ a {
 }
 
 .text {
-  font-family: Inter;
+  font-family: Open Sans;
   font-size: 16px;
   font-weight: 400;
-  line-height: 23.2px;
-  text-align: left;
-  color: #616161;
-}
-
-.main {
-  padding-top: 70px;
-  // overflow: hidden;
-  // background-color: #00c27c;
+  line-height: 21.79px;
+  text-align: left;  
+  color: #585858;
 }
 
 .card {
@@ -666,7 +626,7 @@ a {
         // color: $color-828282;
       }
       .card__link {
-        color: $color-005D6F;
+        // color: $color-005D6F;
       }
     }
 
@@ -699,7 +659,7 @@ a {
       font-weight: 400;
       line-height: 17.12px;
       text-align: center;
-      color: $color-5F5F69;
+      // color: $color-5F5F69;
     }
     .card__new-tag {
       font-size: 16px;
@@ -707,7 +667,7 @@ a {
       line-height: 19.57px;
       text-align: center;
       text-transform: uppercase;
-      color: $color-B02525;
+      // color: $color-B02525;
     }
 
     .card__title {
@@ -734,7 +694,7 @@ a {
       font-weight: 500;
       line-height: 19.57px;
       text-align: center;
-      color: $color-2FA7BE;
+      // color: $color-2FA7BE;
       transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
       &:hover {
         text-decoration: underline;
@@ -826,7 +786,7 @@ a {
     gap: 20px;
 
     .card__title {
-      color: $color-34343B;
+      // color: $color-34343B;
       text-align: center;
       font-weight: 500;
       font-size: 18px;
@@ -834,7 +794,7 @@ a {
       text-transform: none;
     }
     .card__desc {
-      color: $color-5F5F69;
+      // color: $color-5F5F69;
       text-align: center;
       font-size: 16px;
       font-weight: 400;
@@ -882,7 +842,7 @@ a {
     }
 
     .card__title {
-      color: $color-555A5E;
+      // color: $color-555A5E;
       font-size: 20px;
       font-weight: 600;
       line-height: 24.46px;
@@ -900,7 +860,7 @@ a {
       }
     }
     .card__desc {
-      color: $color-828282;
+      // color: $color-828282;
       font-size: 16px;
       font-weight: 400;
       line-height: 19.57px;
@@ -911,7 +871,7 @@ a {
     }
     .card__link {
       margin-top: auto;
-      color: $color-37CBD3;
+      // color: $color-37CBD3;
       font-size: 16px;
       font-weight: 500;
       line-height: 19.57px;
@@ -1052,13 +1012,13 @@ a {
         font-size: 20px;
         line-height: 24px;
         text-transform: uppercase;
-        color: $color-555A5E;
+        // color: $color-555A5E;
       }
       &__desc {
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
-        color: $color-5F5F69;
+        // color: $color-5F5F69;
         text-align: left;
       }
     }
@@ -1092,10 +1052,10 @@ a {
 
     .card__text-wrap_cyan {
       .card__subtitle {
-        color: $color-2FA7BE;
+        // color: $color-2FA7BE;
       }
       .paragraph__title {
-        color: $color-2FA7BE;
+        // color: $color-2FA7BE;
       }
     }
 
@@ -1104,7 +1064,7 @@ a {
       font-weight: 500;
       line-height: 24.46px;
       text-align: left;
-      color: $color-2073A8;
+      // color: $color-2073A8;
     }
 
     .paragraph__title {
@@ -1112,7 +1072,7 @@ a {
       font-weight: 500;
       line-height: 22.01px;
       text-align: left;
-      color: $color-2073A8;
+      // color: $color-2073A8;
     }
 
     .paragraph__desc {
@@ -1120,7 +1080,7 @@ a {
       font-weight: 400;
       line-height: 17.12px;
       text-align: left;
-      color: $color-5F5F69;
+      // color: $color-5F5F69;
       @media (max-width: 700px) {
         max-width: 350px;
       }
@@ -1191,26 +1151,6 @@ a {
   }
 }
 
-.paragraph {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 15px;
-
-  &__title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: $color-555A5E;
-  }
-  &__desc {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: $color-5F5F69;
-    text-align: left;
-  }
-}
 // --------------------------------------- куки start ---------------------------------------
 
 .cookie {
@@ -3384,7 +3324,7 @@ a {
               }
 
               &:hover {
-                color: $color-black;
+                // color: $color-black;
               }
             }
             &_phone {
@@ -3401,7 +3341,7 @@ a {
               }
 
               &:hover {
-                color: $color-black;
+                // color: $color-black;
               }
             }
 
@@ -7770,7 +7710,7 @@ a {
 
       &:hover {
         // border: 1px solid white;
-        background-color: $color-37CBD3;
+        // background-color: $color-37CBD3;
       }
 
       &:active {
@@ -7803,10 +7743,10 @@ a {
       line-height: 20px;
       transition: background-color 0.3s ease-in-out;
       &:hover {
-        background-color: $color-37CBD3;
+        // background-color: $color-37CBD3;
       }
       &:active {
-        background-color: $color-2FA7BE;
+        // background-color: $color-2FA7BE;
       }
     }
   }

@@ -1,5 +1,33 @@
 @charset "UTF-8";
 @font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: Inter;
   font-display: swap;
   src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
@@ -14,17 +42,17 @@
   font-style: normal;
 }
 @font-face {
-  font-family: InterTight;
+  font-family: OpenSans;
   font-display: swap;
-  src: url("../fonts/InterTight-Medium.woff2") format("woff2"), url("../fonts/InterTight-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: Inter;
+  font-family: OpenSans;
   font-display: swap;
-  src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff");
-  font-weight: 600;
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 * {
@@ -136,10 +164,12 @@ legend {
 
 body {
   position: relative;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-family: OpenSans;
   font-size: 16px;
-  line-height: 110%;
+  font-weight: 400;
+  line-height: 21.79px;
+  text-align: left;
+  color: #585858;
 }
 
 html {
@@ -170,7 +200,7 @@ input {
 }
 
 a {
-  color: #222;
+  color: #000;
   text-decoration: none;
 }
 
@@ -205,7 +235,7 @@ a {
 }
 
 .container {
-  max-width: 1714px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -535,16 +565,12 @@ a {
 }
 
 .text {
-  font-family: Inter;
+  font-family: Open Sans;
   font-size: 16px;
   font-weight: 400;
-  line-height: 23.2px;
+  line-height: 21.79px;
   text-align: left;
-  color: #616161;
-}
-
-.main {
-  padding-top: 70px;
+  color: #585858;
 }
 
 .card {
@@ -573,9 +599,6 @@ a {
 .card.card_news:hover {
   box-shadow: 0px 4px 8px rgba(178, 178, 178, 0.3);
 }
-.card.card_news:hover .card__link {
-  color: #005d6f;
-}
 .card.card_news .card__image {
   width: 510px;
   height: 186px;
@@ -602,7 +625,6 @@ a {
   font-weight: 400;
   line-height: 17.12px;
   text-align: center;
-  color: #5f5f69;
 }
 .card.card_news .card__new-tag {
   font-size: 16px;
@@ -610,7 +632,6 @@ a {
   line-height: 19.57px;
   text-align: center;
   text-transform: uppercase;
-  color: #b02525;
 }
 .card.card_news .card__title {
   max-width: 270px;
@@ -635,7 +656,6 @@ a {
   font-weight: 500;
   line-height: 19.57px;
   text-align: center;
-  color: #2fa7be;
   transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
 }
 .card.card_news .card__link:hover {
@@ -715,7 +735,6 @@ a {
   gap: 20px;
 }
 .card_why .card__title {
-  color: #34343b;
   text-align: center;
   font-weight: 500;
   font-size: 18px;
@@ -723,7 +742,6 @@ a {
   text-transform: none;
 }
 .card_why .card__desc {
-  color: #5f5f69;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -762,7 +780,6 @@ a {
   background-color: rgba(255, 255, 255, 0.8);
 }
 .card_business .card__title {
-  color: #555a5e;
   font-size: 20px;
   font-weight: 600;
   line-height: 24.46px;
@@ -783,7 +800,6 @@ a {
   }
 }
 .card_business .card__desc {
-  color: #828282;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.57px;
@@ -796,7 +812,6 @@ a {
 }
 .card_business .card__link {
   margin-top: auto;
-  color: #37cbd3;
   font-size: 16px;
   font-weight: 500;
   line-height: 19.57px;
@@ -931,13 +946,11 @@ a {
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #555a5e;
 }
 .card_prod .paragraph__desc {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #5f5f69;
   text-align: left;
 }
 .card_advantage {
@@ -965,32 +978,23 @@ a {
 .card_advantage .paragraph {
   margin-bottom: -12px;
 }
-.card_advantage .card__text-wrap_cyan .card__subtitle {
-  color: #2fa7be;
-}
-.card_advantage .card__text-wrap_cyan .paragraph__title {
-  color: #2fa7be;
-}
 .card_advantage .card__subtitle {
   font-size: 20px;
   font-weight: 500;
   line-height: 24.46px;
   text-align: left;
-  color: #2073a8;
 }
 .card_advantage .paragraph__title {
   font-size: 18px;
   font-weight: 500;
   line-height: 22.01px;
   text-align: left;
-  color: #2073a8;
 }
 .card_advantage .paragraph__desc {
   font-size: 14px;
   font-weight: 400;
   line-height: 17.12px;
   text-align: left;
-  color: #5f5f69;
 }
 @media (max-width: 700px) {
   .card_advantage .paragraph__desc {
@@ -1056,26 +1060,6 @@ a {
     max-width: 230px;
   }
 }
-.paragraph {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 15px;
-}
-.paragraph__title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #555a5e;
-}
-.paragraph__desc {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #5f5f69;
-  text-align: left;
-}
-
 .cookie {
   position: fixed;
   left: 0;
@@ -2685,9 +2669,6 @@ a {
     margin-bottom: 6px;
   }
 }
-.footer .footer__section .footer__container .footer__top-block .contacts__item_email:hover {
-  color: #222;
-}
 .footer .footer__section .footer__container .footer__top-block .contacts__item_phone {
   align-self: center;
   font-family: Inter;
@@ -2701,9 +2682,6 @@ a {
     align-self: start;
     font-size: 25px;
   }
-}
-.footer .footer__section .footer__container .footer__top-block .contacts__item_phone:hover {
-  color: #222;
 }
 .footer .footer__section .footer__container .footer__top-block .contacts__item_address {
   font-size: 16px;
@@ -6184,9 +6162,6 @@ a {
     width: 100%;
   }
 }
-.call-form .call-form__input-block .call-form__input:hover {
-  background-color: #37cbd3;
-}
 .call-form .call-form__input-block .call-form__input:active {
   background-color: white;
 }
@@ -6210,13 +6185,6 @@ a {
   line-height: 20px;
   transition: background-color 0.3s ease-in-out;
 }
-.call-form .call-form__input-block .call-form__submit-btn:hover {
-  background-color: #37cbd3;
-}
-.call-form .call-form__input-block .call-form__submit-btn:active {
-  background-color: #2fa7be;
-}
-
 .apartments-page .choice {
   padding: 40px 104px 110px;
 }
