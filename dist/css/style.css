@@ -334,8 +334,6 @@ a {
 }
 
 .developer {
-  grid-column: 7/8;
-  grid-row: 1/3;
   align-self: center;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -345,23 +343,23 @@ a {
   font-size: 12px;
   font-weight: 400;
   line-height: 15.6px;
+  letter-spacing: -0.011em;
   text-align: left;
-  opacity: 0.5;
-  color: #fff;
-  transition: opasity 0.3s ease-in-out;
+  color: rgba(205, 250, 246, 0.5);
+  transition: color 0.3s ease-in-out;
 }
 .developer .developer__text {
   max-width: 140px;
 }
 .developer:hover {
-  opacity: 1;
+  color: #CDFAF6;
 }
 .developer svg path {
-  fill: rgba(255, 255, 255, 0.5);
+  fill: rgba(205, 250, 246, 0.5);
   transition: fill 0.3s ease-in-out;
 }
 .developer:hover svg path {
-  fill: white;
+  fill: #CDFAF6;
 }
 
 .form {
@@ -1678,6 +1676,16 @@ a {
   gap: 10px;
   align-items: center;
 }
+.header .header__section .header__container .header__top-block .contacts .contacts__item_email {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.3s ease-in-out;
+}
+.header .header__section .header__container .header__top-block .contacts .contacts__item_email:hover {
+  text-decoration-color: #222;
+}
 .header .header__section .header__container .header__top-block .contacts .contacts__item .contacts__text {
   font-family: Gilroy;
   font-size: 16px;
@@ -1834,10 +1842,14 @@ a {
   line-height: 14.4px;
   text-align: left;
   color: #cdfaf6;
-  transition: color 0.3s ease-in-out;
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.3s ease-in-out;
 }
 .footer .footer__section .footer__container .footer__logo-block .footer__policy:hover {
-  color: #748d55;
+  text-decoration-color: #cdfaf6;
 }
 .footer .footer__section .footer__container .footer__contacts-block {
   grid-area: c;
@@ -1895,6 +1907,26 @@ a {
   align-items: center;
   transition: color 0.3s ease-in-out;
 }
+.footer .footer__section .footer__container .footer__contacts-block .contacts__item_email {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.3s ease-in-out;
+}
+.footer .footer__section .footer__container .footer__contacts-block .contacts__item_email:hover {
+  text-decoration-color: #f0fdfb;
+}
+.footer .footer__section .footer__container .footer__contacts-block .contacts__item_phone {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.3s ease-in-out;
+}
+.footer .footer__section .footer__container .footer__contacts-block .contacts__item_phone:hover {
+  text-decoration-color: #f0fdfb;
+}
 .footer .footer__section .footer__container .footer__nav-block {
   grid-area: b;
 }
@@ -1918,7 +1950,11 @@ a {
   line-height: 21.19px;
   text-align: left;
   color: #f0fdfb;
-  transition: color 0.3s ease-in-out;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.3s ease-in-out;
 }
 @media (max-width: 760px) {
   .footer .footer__section .footer__container .footer__nav-block .nav__list .nav__item .nav__text {
@@ -1927,20 +1963,10 @@ a {
   }
 }
 .footer .footer__section .footer__container .footer__nav-block .nav__list .nav__item .nav__text:hover {
-  color: #748d55;
+  text-decoration-color: #f0fdfb;
 }
 .footer .footer__section .footer__container .footer__developer {
   grid-area: e;
-  opacity: 0.5;
-}
-.footer .footer__section .footer__container .footer__developer .developer__text {
-  font-family: Inter;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15.6px;
-  letter-spacing: -0.011em;
-  text-align: left;
-  color: #CDFAF6;
 }
 
 .not-found-page {
