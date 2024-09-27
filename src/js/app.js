@@ -283,7 +283,6 @@ if (formAll) {
           } else {
             popupOpen(document.getElementById("success"));
           }
-          // TODO добавить логику показа разный сообщений об успешной отправке  через поле темы
           form.classList.remove("_sending");
         } else {
           // popupOpen(document.getElementById("error"));
