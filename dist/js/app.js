@@ -1,6 +1,25 @@
 // const choiceFilterForm = document.querySelector("[choice-form]");
 // let urlParams = new URLSearchParams(window.location.search);
 
+// ---------------------------------- start menu ----------------------------------
+
+const header = document.querySelector(".header");
+const main = document.querySelector(".main");
+if (header) {
+  document.addEventListener("scroll", (e) => {
+    if (window.innerWidth > 760) {
+      console.log(window.scrollY);
+      if (window.scrollY > 115) {      
+        header.classList.add("header_scroll");
+        main.classList.add("main_scroll");
+      } else {
+        header.classList.remove("header_scroll");
+        main.classList.remove("main_scroll");
+      }
+    }
+  });
+}
+// ---------------------------------- end menu ----------------------------------
 // ----------------------------------------- start заполнение фильтров: --------------------------------------
 
 // // функция инициализации рэндж слайдеров:
