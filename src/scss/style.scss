@@ -244,6 +244,11 @@ a {
     padding: 13.5px 40px;
   }
 
+  @media (max-width: 760px) {
+    font-size: 16px;
+    line-height: 19.41px;
+  }
+
   &.btn_gray {
     border-color: #11a0a3;
     background: #11a0a3;
@@ -2077,6 +2082,14 @@ a {
   .footer__section {
     padding: 50px 20px;
 
+    @media (max-width: 1060px) {
+      padding: 40px 20px;
+    }
+
+    @media (max-width: 760px) {
+      padding: 30px 20px;
+    }
+
     .footer__container {
       display: grid;
       grid-template-areas: 
@@ -2086,12 +2099,46 @@ a {
       justify-content: space-between;
       gap: 28px 10px;
 
+      @media (max-width: 1060px) {
+        gap: 50px 10px;
+      }
+
+
+      @media (max-width: 760px) {
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "e"
+        ;      
+        justify-content: center;
+        justify-items: center;
+        gap: 28px 10px;
+
+
+      }
+
       .footer__logo-block {
         grid-area: a;
         display: grid;
         align-content: start;
-
         gap: 21px;
+        
+        @media (max-width: 1060px) {  
+          gap: 12px;
+
+        }
+
+        @media (max-width: 760px) {
+          justify-items: center;    
+        }
+
+        .logo {
+          @media (max-width: 760px) {
+            width: 122px; 
+            justify-self: center;       
+          }
+        }
 
         .footer__copyright {
           font-family: Open Sans;
@@ -2123,11 +2170,45 @@ a {
         align-content: start;
         gap: 46px;
 
+        @media (max-width: 760px) {
+          gap: 30px;
+          
+        }
+
+        .footer__btn {
+
+          @media (max-width: 1060px) {          
+          padding: 13.5px 14px;
+          }
+
+          @media (max-width: 760px) {
+            padding: 10.5px 19px; 
+            font-size: 17px;
+            line-height: 20.01px;
+            
+          }
+        }
+
         .contacts {
           width: 100%;
           height: 100%;
           display: grid;
           gap: 15px;
+
+          @media (max-width: 760px) {
+            justify-items: center;    
+          }
+
+          .contacts__text {
+            @media (max-width: 760px) {
+              font-family: Inter;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 16.94px;
+              text-align: left;
+   
+            }
+          }
   
           &__item {
             display: flex;
@@ -2139,6 +2220,7 @@ a {
             line-height: 19.36px;
             text-align: left;
             color: #f0fdfb;
+            align-items: center;
   
             transition: color 0.3s ease-in-out;
   
@@ -2168,6 +2250,11 @@ a {
           align-items: start;
           gap: 16px;
 
+          @media (max-width: 760px) {
+            justify-items: center;    
+            // gap: 13px;
+          }
+
           .nav__item {
             .nav__text {
               font-family: Gilroy;
@@ -2178,6 +2265,12 @@ a {
 
               color: #f0fdfb;
               transition: color 0.3s ease-in-out;
+
+              @media (max-width: 760px) {
+                font-size: 16px;
+                line-height: 18.83px;
+              }
+
 
               &:hover {
                 color: #748d55;
