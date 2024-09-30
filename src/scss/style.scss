@@ -2790,7 +2790,7 @@ a {
           grid-template-rows: auto auto 1fr;
           padding: 25px;
           background: #FFFFFF;
-          box-shadow: 4px 4px 8px rgba(30, 109, 109, 0.06), 1px 1px 3px rgba(8, 72, 72, 0.07);
+          box-shadow: 4px 4px 8px rgba(30, 109, 109, 0.06), 1px 1px 3px rgba(8, 72, 72, 0.07), inset 0 0 0 rgba(8, 72, 72, 0.07), inset 0 0 0 rgba(8, 72, 72, 0.07);
           border-radius: 10px;
           transition: box-shadow 0.3s ease-in-out;
 
@@ -2799,7 +2799,17 @@ a {
           }
 
           &:hover {
-            box-shadow: none;
+            box-shadow: 0 0 0 rgba(30, 109, 109, 0.06), 0 0 0 rgba(8, 72, 72, 0.07), inset 4px 4px 8px rgba(30, 109, 109, 0.06), inset 1px 1px 3px rgba(8, 72, 72, 0.07);
+            // box-shadow: none;
+            svg path{
+              fill: #FAB502;
+            }
+
+          }
+
+          & svg path{
+            fill: #11A0A3;
+            transition: fill 0.3s ease-in-out;
           }
 
           .adv-card-title {
@@ -2838,6 +2848,10 @@ a {
             justify-content: start;
             align-items: center;
             transition: gap 0.3s ease-in-out;
+
+            & svg path {
+              fill: #117074;
+            }
 
             @media (max-width: 660px) { 
               font-size: 16px;
