@@ -277,6 +277,10 @@ a {
   grid-template-columns: auto 1fr;
   gap: 50px;
 
+  @media (max-width: 1060px) {
+    gap: 25px;
+  }
+
   @media (max-width: 660px) {
     gap: 10px;
   }
@@ -339,11 +343,11 @@ a {
 
   @media (max-width: 1060px) {
     padding: 13.5px 40px;
+    font-size: 17px;
   }
 
   @media (max-width: 760px) {
     font-size: 16px;
-    line-height: 19.41px;
   }
 
   &.btn_gray {
@@ -2750,6 +2754,119 @@ a {
         }
       }
     }
+  }
+
+  .advantages {
+    .container {
+      display: grid;
+      gap: 48px;
+
+      @media (max-width: 1060px) {
+        gap: 38px;        
+      }
+
+      @media (max-width: 660px) {
+        gap: 23px;        
+      }
+
+      .advantages__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(387px, 1fr));
+        grid-template-rows: auto;
+        gap: 25px;
+
+        @media (max-width: 1060px) {
+          gap: 15px;          
+        }
+
+        @media (max-width: 660px) {
+          grid-template-columns: 1fr;
+        
+        }
+
+        .adv-card {
+          display: grid;
+          gap: 13px;
+          grid-template-rows: auto auto 1fr;
+          padding: 25px;
+          background: #FFFFFF;
+          box-shadow: 4px 4px 8px rgba(30, 109, 109, 0.06), 1px 1px 3px rgba(8, 72, 72, 0.07);
+          border-radius: 10px;
+          transition: box-shadow 0.3s ease-in-out;
+
+          @media (max-width: 660px) {
+            padding: 15px 15px 21px 15px;          
+          }
+
+          &:hover {
+            box-shadow: none;
+          }
+
+          .adv-card-title {
+            font-family: Gilroy;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29.4px;
+            text-align: left;
+            color: #052B2E;
+
+            @media (max-width: 660px) { 
+              font-size: 20px;
+              line-height: 24.5px;              
+            }
+          }
+
+          .adv-card-text {
+            font-family: Open Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21.79px;
+            text-align: left;
+            color: #585858;
+
+            @media (max-width: 660px) { 
+              font-size: 14px;
+              line-height: 19.07px;
+            }
+          }
+          
+          .adv-card-link {
+            margin-top: 35px;
+            display: grid;
+            grid-auto-flow: column;
+            gap: 10px;
+            justify-content: start;
+            align-items: center;
+            transition: gap 0.3s ease-in-out;
+
+            @media (max-width: 660px) { 
+              font-size: 16px;
+              line-height: 21.79px;
+            margin-top: 0;
+
+            }
+
+            &:hover {
+              gap: 15px;
+            }
+
+            .adv-card-link-text {
+              font-family: Open Sans;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 21.79px;
+              text-align: left;
+              color: #117074;
+            }
+          }
+        }
+      }
+      
+      .advantages__btn {
+        justify-self: center;
+      }
+    }
+
   }
 
 }
