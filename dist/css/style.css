@@ -2488,6 +2488,56 @@ a {
 .glavnaya .advantages .container .advantages__btn {
   justify-self: center;
 }
+.glavnaya .solutions {
+  background: linear-gradient(103.66deg, #F0FDFB 27.06%, #CDFAF6 103.06%);
+  padding: 100px 20px;
+}
+@media (max-width: 1060px) {
+  .glavnaya .solutions {
+    padding: 80px 20px;
+  }
+}
+.glavnaya .solutions .container {
+  display: grid;
+  gap: 40px;
+}
+.glavnaya .solutions .container .solutions__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-rows: auto;
+  gap: 15.5px 10px;
+}
+@media (max-width: 660px) {
+  .glavnaya .solutions .container .solutions__list {
+    grid-template-columns: 1fr;
+    gap: 16.5px 10px;
+  }
+}
+.glavnaya .solutions .container .solutions__item {
+  position: relative;
+  padding: 25px 20px 25px 105px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  display: block;
+  align-content: center;
+  min-height: 100px;
+}
+.glavnaya .solutions .container .solutions__item svg {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+}
+@media (max-width: 660px) {
+  .glavnaya .solutions .container .solutions__item svg {
+    height: 55px;
+    left: 22px;
+  }
+}
+.glavnaya .solutions .container .btn {
+  justify-self: center;
+  font-size: 18px;
+}
 
 .not-found-page {
   display: grid;
