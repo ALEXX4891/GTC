@@ -67,6 +67,9 @@ ul li {
 img {
   width: 100%;
   height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 address {
@@ -197,10 +200,34 @@ a {
 
 .section {
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 49px 20px;
+
+  @media (max-width: 1060px) {
+    padding: 39px 20px;
+
+  }
 
   @media (max-width:760px) {
     padding: 30px 10px;
+
+  }
+}
+
+
+
+.section__container {
+  display: grid;
+  gap: 50px;
+
+  @media (max-width: 1060px) {
+    gap: 37px;
+
+
+  }
+
+  @media (max-width: 660px) {
+    gap: 23px;
+
 
   }
 }
@@ -225,6 +252,69 @@ a {
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+
+.section-title {
+  font-family: Gilroy;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39.2px;
+
+  @media (max-width: 1060px) {
+    font-size: 30px;
+    line-height: 36.75px;
+  }
+
+  @media (max-width: 660px) {
+    font-size: 26px;
+    line-height: 31.85px;
+  }
+  
+}
+
+.top-block {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 50px;
+
+  @media (max-width: 660px) {
+    gap: 10px;
+  }
+
+  .top-block__title {
+    width: max-content;
+
+    @media (max-width: 660px) {
+      width: min-content;
+    }
+  }
+  .top-block__number {
+    margin-top: 18px;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid;
+    border-image: linear-gradient(90deg, #11a0a3 0%, #fab502 100%);
+    // border: 1px solid;
+
+// border-image: linear-gradient(0deg, #11A0A3, #11A0A3), linear-gradient(90deg, #11A0A3 0%, #FAB502 100%);
+
+
+    border-image-slice: 1;
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.2px;
+    text-align: right;    
+    color: #F8B403;
+
+    @media (max-width: 660px) {
+      margin-top: 15px;
+
+      
+    }
+
+  }
 }
 
 .btn {
@@ -498,12 +588,21 @@ a {
 }
 
 .text {
-  font-family: Open Sans;
+  font-family: OpenSans;
   font-size: 16px;
   font-weight: 400;
-  line-height: 21.79px;
-  text-align: left;
+  line-height: 21.79px;  
   color: #585858;
+
+  @media (max-width: 1060px) {
+    font-size: 15px;
+    line-height: 20.43px;
+  }
+
+  @media (max-width: 760px) {
+    font-size: 14px;
+    line-height: 19.07px;
+  }
 }
 
 .logo {
@@ -1891,7 +1990,7 @@ a {
     }
 
     @media (max-width: 760px) {
-      padding: 10px 10px 4px;
+      padding: 10px 10px 10px;
     }
 
     .header__container {
@@ -1934,7 +2033,7 @@ a {
         align-items: center;
         gap: 50px;
         grid-area: a;
-        padding-bottom: 16px;
+        padding-bottom: 22px;
         border-bottom: 1px solid;
         // border-image: linear-gradient(0deg, #11A0A3, #11A0A3);
         // border-image: linear-gradient(#11A0A3, #FAB502);
@@ -2012,7 +2111,7 @@ a {
         padding-top: 15px;
 
         @media (max-width: 1060px) {
-          padding-top: 26px;
+          padding-top: 29px;
         }
 
         @media (max-width: 760px) {
@@ -2152,7 +2251,7 @@ a {
         }
 
         .footer__copyright {
-          font-family: Open Sans;
+          font-family: OpenSans;
           font-size: 12px;
           font-weight: 400;
           line-height: 14.4px;
@@ -2161,7 +2260,7 @@ a {
         }
 
         .footer__policy {
-          font-family: Open Sans;
+          font-family: OpenSans;
           font-size: 12px;
           font-weight: 400;
           line-height: 14.4px;
@@ -2316,13 +2415,6 @@ a {
 // --------------------------------------- GLAVNAYA start ---------------------------------------
 
 .glavnaya {
-  .section_banner {
-    margin-top: 10px;
-
-    @media (max-width: 1060px) {
-      margin-top: 0;
-    }
-  }
 
   .banner {
     .banner__container {
@@ -2394,11 +2486,13 @@ a {
           .banner__btn-block {
             grid-area: d;
             display: grid;
-            gap: 15px;
+            gap: 11px;
             max-width: 280px;
 
             @media (max-width: 660px) {
               max-width: 100%;
+              gap: 16px;
+
             }
 
             .banner__btn {
@@ -2550,7 +2644,7 @@ a {
             position: relative;
             display: grid;
             align-items: center;
-            padding: 15px 160px 15px 25px;
+            padding: 15px 140px 15px 25px;
             gap: 15px;
 
             max-width: 100%;
@@ -2563,6 +2657,11 @@ a {
 
             background-repeat: no-repeat;
             background-position: center right 10px;
+            transition: box-shadow 0.3s ease-in-out;
+
+            &:hover {
+              box-shadow: none;
+            }
 
             @media (max-width: 660px) {
               min-height: 83px;
@@ -2603,6 +2702,56 @@ a {
       }
     }
   }
+
+  .about {
+    .container {
+  
+      .about__bot-block {
+        display: grid;
+        grid-template-columns: 1fr 445px;
+        gap: 50px;
+
+        @media (max-width: 1060px) {
+          grid-template-columns: 1fr 385px;
+          gap: 25px;          
+        }
+
+        @media (max-width: 760px) {
+          grid-template-columns: 1fr;
+          gap: 25px;          
+        }
+    
+        .about__img-block {
+          width: 100%;
+          height: 446px;
+          border-radius: 10px;
+          overflow: hidden;
+
+          @media (max-width: 1060px) {
+            height: 303px;
+          }
+    
+          & img {
+            object-position: right;
+            transform: none;
+            transition: transform 0.3s ease-in-out;
+            
+          }
+    
+          &:hover img {
+            transform: scale(1.05);
+          }
+        }
+        .about__text-block {
+          display: grid;
+          align-content: center;
+          .about__text {
+          }
+        }
+      }
+    }
+  }
+
 }
 
 // --------------------------------------- GLAVNAYA end ---------------------------------------
