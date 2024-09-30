@@ -896,6 +896,58 @@ new Swiper(".banner_swiper", {
   },
 });
 
+new Swiper(".offers_swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  // loop: true,
+  // allowTouchMove: true,
+  // slidesPerView: auto, // сколько слайдов показывать, можно дробно
+  slidesPerView: 2, // сколько слайдов показывать, можно дробно
+  // slidersPerGroup: 3, // сколько слайдов в группе
+  // centeredSlides: true, //выравнивание слайдов по центру
+  // initialSlide: 0, //начальный слайд (c нуля)
+
+  spaceBetween: 25,
+  // slideToClickedSlide: true, //перелистывание слайдов по клику
+  // grabCursor: true, //меняет курсор при наведении на руку
+  watchOverflow: true, //отключает слайдер если все слайды входят в область видимости
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next-offer",
+    prevEl: ".swiper-button-prev-offer",
+  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  // mousewheel: { //перелистывание слайдов по мышке
+  //   sensitivity: 1,
+  //   eventsTarget: ".news__slider",
+  // },
+  // keyboard: { //перелистывание слайдов по нажатию клавиш
+  //   enabled: true,
+  //   onlyInViewport: true,
+  //   // pageUpDown: true,
+  // },
+  breakpoints: {
+    0: {
+      // slidesPerView: 1,
+      // spaceBetween: 20,
+    },
+    960: {
+      // spaceBetween: 40,
+    },
+  },
+});
+
 new Swiper(".regions_swiper", {
   // Optional parameters
   direction: "horizontal",

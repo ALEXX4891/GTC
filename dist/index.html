@@ -190,13 +190,13 @@
 
         </div>
         <div class="swiper-navigation">
-          <div class="swiper-button swiper-button-prev-banner">
+          <div class="swiper-button swiper-button-prev swiper-button-prev-banner">
             &lt
           </div>
 
           <div class="swiper-pagination"></div>
 
-          <div class="swiper-button swiper-button-next-banner">
+          <div class="swiper-button swiper-button-next swiper-button-next-banner">
             &gt
           </div>
         </div>
@@ -579,7 +579,7 @@
     </div>
   </section>
 
-  <section style="display: none;" class="section section_offers offers">
+  <section style="display: none" class="section section_offers offers">
     <div class="container offers__container">
       <div class="top-block">
         <h2 class="top-block__title section-title" style="text-wrap: nowrap;">
@@ -594,23 +594,24 @@
         <h3 class="offers__slider-title">
           Современные IT — решения, которые гарантировано помогут снизить расходы до 40%
         </h3>
-        <div class="offers__slider-wrap swiper offers__slider">
+
+        <div class="offers__slider-wrap swiper offers_swiper">
           <ul class="offers__slider swiper-wrapper">
 
             <li class="offers__slider-item swiper-slide off-card off-card_cons">
               <div class="off-card__img">
-                <img src="" alt="">
+                <img src="img/offer1.jpg" alt="">
               </div>
 
               <div class="off-card__text-wrap">
-                <h2>
+                <h2 class="off-card__title">
                   Контроллер (Гарвекс, КМАЗС и др.)
                 </h2>
                 <p class="off-card__subtitle">
                   Для автоматизации выдачи и учёта
                 </p>
 
-                <p class="off-card__text">
+                <p class="off-card__text text">
                   Функции:<br>
                   • Выдача топлива по электронным картам, ПИН-кодам<br>
                   • Выдача топлива по лимитам: дата, время,<br>
@@ -647,40 +648,39 @@
                 <button class="btn btn_trans-orange btn_calc  popup-link" href="#popup-form">
                   Рассчитать стоимость
                 </button>
+
+                <button class="btn btn_gray btn_modal  popup-link" href="#popup-form">
+                  Узнать больше
+                </button>
+
               </div>
             </li>
 
             <li class="offers__slider-item swiper-slide off-card off-card_cons">
               <div class="off-card__img">
-                <img src="" alt="">
+                <img src="img/offer2.jpg" alt="">
+
               </div>
 
               <div class="off-card__text-wrap">
-                <h2>
+                <h2 class="off-card__title">
                   Автоматизированная колонка
                 </h2>
                 <p class="off-card__subtitle">
                   Отвечает за отгрузку топлива.
                 </p>
 
-                <p class="off-card__text">
+                <p class="off-card__text text">
                   Функции:<br>
-                  • Выдача топлива по электронным картам, ПИН-кодам<br>
-                  • Выдача топлива по лимитам: дата, время,<br>
-                  дни недели, суточный/месячный объём и другие комбинации условий
-                  • Измерение и хранение информации
-                  об уровне топлива (при наличии уровнемера)<br>
-                  • Измерение и хранение информации о плотности, температуре,
-                  объёме и массе• топлива (при наличии уровнемера)<br>
-                  • Хранение данных в собственной энергонезависимой
-                  памяти<br><br>
+                  • Отгрузка топлива<br>
+                  • Определение объёма выданного топлива<br>
+                  • Наличии фильтра грубой очистки
+                  позволяет не допускать попадания «сторонних примесей» в технику<br><br>
 
                   Преимущества:<br>
-                  • Не требуется оператор• Выдача топлива происходит быстрее чем с оператором<br>
-                  • Задаются лимиты выдачи топлива для каждого сотрудника<br>
-                  • Переход от бумажного к электронному учёту расхода топлива<br>
-                  • Контроль количества топлива в ёмкостях<br>
-                  • Удалённое управление системой через интернет<br>
+                  • Отсутствие погрешности<br>
+                  • Сокращение времени заправки техники<br>
+                  • Простота обслуживания<br>
                 </p>
 
                 <div class="off-card__btn-wrap">
@@ -699,6 +699,308 @@
 
                 <button class="btn btn_trans-orange btn_calc  popup-link" href="#popup-form">
                   Рассчитать стоимость
+                </button>
+
+                <button class="btn btn_gray btn_modal  popup-link" href="#popup-form">
+                  Узнать больше
+                </button>
+              </div>
+            </li>
+
+            <li class="offers__slider-item swiper-slide off-card off-card_cons">
+              <div class="off-card__img">
+                <img src="img/offer3.jpg" alt="">
+              </div>
+
+              <div class="off-card__text-wrap">
+                <h2 class="off-card__title">
+                  Уровнемер
+                </h2>
+                <p class="off-card__subtitle">
+                  Отвечает за данные по приёмке и хранению нефтепродуктов.
+                </p>
+
+                <p class="off-card__text text">
+                  Функции:<br>
+                  • Измерение уровня топлива<br>
+                  • Измерение уровня раздела сред (топливо/вода)<br>
+                  • Измерение температуры топлива (влияет на уровень топлива)<br>
+                  • Измерение плотности топлива (влияет на уровень топлива)<br>
+                  • Измерение объёма топлива (таблица/формулы)<br>
+                  • Измерение массы топлива<br>
+                  • Цифровой интерфейс RS-485<br>
+                  • Взрывобезопасное исполнение<br><br>
+
+                  Преимущества:
+                  • Инструментальный контроль измеряемых параметров<br>
+                  • Точная информация об уровне, объёме топлива, его температуре и плотности<br>
+                  • Исключение человеческого фактора и ошибок<br>
+                  • Непрерывная самодиагностика и измерение параметров<br>
+                  • Возможность формировать различные отчёты<br>
+                  • Реализация перехода от бумажного к электронному учёту расхода топлива<br>
+                  • Интеграция с учётными системами (1С и аналогами)<br>
+                </p>
+
+                <div class="off-card__btn-wrap">
+                  <button class="off-card__btn off-card__btn_show">
+                    Подробнее
+                  </button>
+
+                  <button class="off-card__btn off-card__btn_hide">
+                    Скрыть
+                  </button>
+                </div>
+
+                <button class="btn btn_trans-orange btn_cons  popup-link" href="#popup-form">
+                  Получить консультацию
+                </button>
+
+                <button class="btn btn_trans-orange btn_calc  popup-link" href="#popup-form">
+                  Рассчитать стоимость
+                </button>
+
+                <button class="btn btn_gray btn_modal  popup-link" href="#popup-form">
+                  Узнать больше
+                </button>
+              </div>
+            </li>
+
+            <li class="offers__slider-item swiper-slide off-card off-card_cons">
+              <div class="off-card__img">
+                <img src="img/offer4.jpg" alt="">
+              </div>
+
+              <div class="off-card__text-wrap">
+                <h2 class="off-card__title">
+                  Топливозаправочный пункт (ТЗП)
+                </h2>
+                <p class="off-card__subtitle">
+                  Включает в себя закрытие всех вопросов учёта топлива на предприятии
+                </p>
+
+                <p class="off-card__text text">
+                  <b>Функции:</b><br>
+                  • Автоматизация полного цикла движения топлива на предприятиях<br>
+                  • Хранение топлива<br>
+                  • Контроль поступления топлива<br>
+                  • Контроль выдачи топлива<br>
+                  • По идее ТЗП решает все вопросы в совокупности, в отличии от остальных отдельных решений.<br><br>
+
+                  <b>Преимущества:</b><br>
+                  • Снижение уровня расходов на топливо до 40%<br>
+                  • Инструментальный контроль за расходом топлива<br>
+                  • Исключение случаев махинаций и хищения топлива<br>
+                  • Сокращение издержек на обслуживание ТРК (отсутствие оператора)<br>
+                  • Сокращение времени заправки техники, оперативность управления ТРК и лимитами<br>
+                  • Сертифицирован и соответствует нормам законодательства<br>
+                  • Интеграция со сторонними учётными системами: 1С, СМТ, Видео и т.д.<br>
+                </p>
+
+                <div class="off-card__btn-wrap">
+                  <button class="off-card__btn off-card__btn_show">
+                    Подробнее
+                  </button>
+
+                  <button class="off-card__btn off-card__btn_hide">
+                    Скрыть
+                  </button>
+                </div>
+
+                <button class="btn btn_trans-orange btn_cons  popup-link" href="#popup-form">
+                  Получить консультацию
+                </button>
+
+                <button class="btn btn_trans-orange btn_calc  popup-link" href="#popup-form">
+                  Рассчитать стоимость
+                </button>
+
+                <button class="btn btn_gray btn_modal  popup-link" href="#popup-form">
+                  Узнать больше
+                </button>
+              </div>
+            </li>
+
+            <li class="offers__slider-item swiper-slide off-card off-card_cons">
+              <div class="off-card__img">
+                <img src="img/offer5.jpg" alt="">
+              </div>
+
+              <div class="off-card__text-wrap">
+                <h2 class="off-card__title">
+                  Видеоконтроль
+                </h2>
+                <p class="off-card__subtitle">
+                  Позволяет контролировать все процессы, происходящие на АЗС
+                </p>
+
+                <p class="off-card__text text">
+                  1С, Скаут, Ivideon и их аналогами или сторонними сервисами
+                </p>
+
+                <div class="off-card__btn-wrap">
+                  <button class="off-card__btn off-card__btn_show">
+                    Подробнее
+                  </button>
+
+                  <button class="off-card__btn off-card__btn_hide">
+                    Скрыть
+                  </button>
+                </div>
+
+                <button class="btn btn_trans-orange btn_cons  popup-link" href="#popup-form">
+                  Получить консультацию
+                </button>
+
+                <button class="btn btn_trans-orange btn_calc  popup-link" href="#popup-form">
+                  Рассчитать стоимость
+                </button>
+
+                <button class="btn btn_gray btn_modal  popup-link" href="#popup-form">
+                  Узнать больше
+                </button>
+              </div>
+            </li>
+
+            <li class="offers__slider-item swiper-slide off-card off-card_cons">
+              <div class="off-card__img">
+                <img src="img/offer6.jpg" alt="">
+              </div>
+
+              <div class="off-card__text-wrap">
+                <h2 class="off-card__title">
+                  Автотопливозаправщик (Передвижной)
+                </h2>
+                <p class="off-card__subtitle">
+                  Включает в себя закрытие всех вопросов учёта топлива на предприятии
+                </p>
+
+                <p class="off-card__text text">
+                  Функции<br>
+                  • Автоматизация полного цикла движения топлива на предприятиях<br>
+                  • Хранение топлива<br>
+                  • Контроль поступления топлива<br>
+                  • Контроль выдачи топлива<br>
+                  • По идее ТЗП решает все вопросы в совокупности, в отличии от остальных отдельных решений.<br><br>
+
+                  Преимущества<br>
+                  • Снижение уровня расходов на топливо до 40%<br>
+                  • Инструментальный контроль за расходом топлива<br>
+                  • Исключение случаев махинаций и хищения топлива<br>
+                  • Сокращение издержек на обслуживание ТРК (отсутствие оператора)<br>
+                  • Сокращение времени заправки техники, оперативность управления ТРК и лимитами<br>
+                  • Сертифицирован и соответствует нормам законодательства• Интеграция со сторонними учётными системами:
+                  1С, СМТ, Видео и т.д.<br>
+                </p>
+
+                <div class="off-card__btn-wrap">
+                  <button class="off-card__btn off-card__btn_show">
+                    Подробнее
+                  </button>
+
+                  <button class="off-card__btn off-card__btn_hide">
+                    Скрыть
+                  </button>
+                </div>
+
+                <button class="btn btn_trans-orange btn_cons  popup-link" href="#popup-form">
+                  Получить консультацию
+                </button>
+
+                <button class="btn btn_trans-orange btn_calc  popup-link" href="#popup-form">
+                  Рассчитать стоимость
+                </button>
+
+                <button class="btn btn_gray btn_modal  popup-link" href="#popup-form">
+                  Узнать больше
+                </button>
+              </div>
+            </li>
+
+            <li class="offers__slider-item swiper-slide off-card off-card_cons">
+              <div class="off-card__img">
+                <img src="img/offer7.jpg" alt="">
+              </div>
+
+              <div class="off-card__text-wrap">
+                <h2 class="off-card__title">
+                  Интеграция с внешними учётными сервисами
+                </h2>
+                <p class="off-card__subtitle">
+                  Интеграция с внешними учётными сервисами
+                </p>
+
+                <p class="off-card__text text">
+                </p>
+
+                <div class="off-card__btn-wrap">
+                  <button class="off-card__btn off-card__btn_show">
+                    Подробнее
+                  </button>
+
+                  <button class="off-card__btn off-card__btn_hide">
+                    Скрыть
+                  </button>
+                </div>
+
+                <button class="btn btn_trans-orange btn_cons  popup-link" href="#popup-form">
+                  Получить консультацию
+                </button>
+
+                <button class="btn btn_trans-orange btn_calc  popup-link" href="#popup-form">
+                  Рассчитать стоимость
+                </button>
+
+                <button class="btn btn_gray btn_modal  popup-link" href="#popup-form">
+                  Узнать больше
+                </button>
+              </div>
+            </li>
+
+            <li class="offers__slider-item swiper-slide off-card off-card_cons">
+              <div class="off-card__img">
+                <img src="img/offer8.jpg" alt="">
+              </div>
+
+              <div class="off-card__text-wrap">
+                <h2 class="off-card__title">
+                  Услуги для АЗС
+                </h2>
+                <p class="off-card__subtitle">
+                  Услуги, обеспечивающие максимальную продолжительность и прибыльность АЗС, АЗ\ГЗС и нефтебаз.
+                </p>
+
+                <p class="off-card__text text">
+                  Предлагаем:<br>
+                  • Расчет и подбор оборудования и комплектующих<br>
+                  • Внедрение и установка программного обеспечения<br>
+                  • Гарантийное и постгарантийное обслуживание<br>
+                  • Сервис и техническая поддержка<br>
+                  • Модернизация имеющегося оборудования<br>
+                  • Проектирование и разработка индивидуальной документации для АЗС<br>
+                  • Проведение аудита на предмет технического содержания и эксплуатации АЗС<br>
+                  • Очистка топливных емкостей<br>
+                </p>
+
+                <div class="off-card__btn-wrap">
+                  <button class="off-card__btn off-card__btn_show">
+                    Подробнее
+                  </button>
+
+                  <button class="off-card__btn off-card__btn_hide">
+                    Скрыть
+                  </button>
+                </div>
+
+                <button class="btn btn_trans-orange btn_cons  popup-link" href="#popup-form">
+                  Получить консультацию
+                </button>
+
+                <button class="btn btn_trans-orange btn_calc  popup-link" href="#popup-form">
+                  Рассчитать стоимость
+                </button>
+
+                <button class="btn btn_gray btn_modal  popup-link" href="#popup-form">
+                  Узнать больше
                 </button>
               </div>
             </li>
@@ -707,11 +1009,27 @@
 
         </div>
 
+        <div class="swiper-button swiper-button-prev swiper-button-prev-offer">
+          <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.6364 0.999976L1 12.6363L12.6364 24.2727" stroke="#117074" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+        </div>
+
+        <div class="swiper-button swiper-button-next swiper-button-next-offer">
+          <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.36364 0.999976L13 12.6363L1.36364 24.2727" stroke="#117074" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="section section_solutions solutions">
+  <section style="display: none"  class="section section_solutions solutions">
     <div class="container solutions__container">
       <div class="top-block">
         <h2 class="top-block__title section-title">
@@ -830,7 +1148,7 @@
 
       </ul>
 
-      <button class="btn btn_gray btn_calc popup-link" href="#popup-form">
+      <button class="btn btn_gray popup-link" href="#popup-form">
         Рассчитать стоимость
       </button>
     </div>
@@ -849,7 +1167,7 @@
     </div>
   </section>
 
-  <section class="section section_results results">
+  <section style="display: none"  class="section section_results results">
     <div class="container results__container">
       <div class="top-block">
         <h2 class="top-block__title section-title" style="text-wrap: nowrap;">
@@ -862,7 +1180,7 @@
     </div>
   </section>
 
-  <section class="section section_team team">
+  <section style="display: none"  class="section section_team team">
     <div class="container team__container">
       <div class="top-block">
         <h2 class="top-block__title section-title" style="text-wrap: nowrap;">
@@ -875,7 +1193,7 @@
     </div>
   </section>
 
-  <section class="section section_partners partners">
+  <section style="display: none"  class="section section_partners partners">
     <div class="container partners__container">
       <div class="top-block">
         <h2 class="top-block__title section-title" style="text-wrap: nowrap;">
@@ -888,7 +1206,7 @@
     </div>
   </section>
 
-  <section class="section section_geo geo">
+  <section style="display: none"  class="section section_geo geo">
     <div class="container geo__container">
       <div class="top-block">
         <h2 class="top-block__title section-title" style="text-wrap: nowrap;">
@@ -901,7 +1219,7 @@
     </div>
   </section>
 
-  <section class="section section_consultations consultations">
+  <section style="display: none"  class="section section_consultations consultations">
     <div class="consultations_top-block">
 
     </div>

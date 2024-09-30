@@ -2883,6 +2883,120 @@ a {
 
   }
 
+  .offers {
+    .container {
+      display: grid;
+      gap: 40px;
+
+      .offers__slider-block {
+        position: relative;
+          min-width: 0;
+
+        // display: grid;
+        // gap: 23px;
+
+        .offers__slider-title {
+          font-family: Open Sans;
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 29.96px;
+          text-align: left;
+          color: #585858;
+          margin-bottom: 23px;
+        }
+
+        .offers__slider-wrap {
+          min-width: 0;
+          .swiper-wrapper {
+            .off-card {
+              height: 607px;
+              box-shadow: 3px 4px 8px rgba(137, 150, 150, 0.06), 0px 0px 3px rgba(35, 92, 92, 0.07);
+              border-radius: 10px;
+
+              &.off-card_cons {
+              }
+
+              .off-card__img {
+                height: 332px;
+                width: 100%;
+              }
+
+              .off-card__text-wrap {
+                display: grid;
+                padding: 30px 25px;
+                gap: 15px;
+                background: #FFFFFF;
+
+              }
+              .off-card__title {
+                font-family: Gilroy;
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 34.3px;
+                text-align: left;
+                color: #052B2E;
+              }
+              .off-card__subtitle {
+              }
+              .off-card__text {
+              }
+              .off-card__btn-wrap {
+                .off-card__btn {
+                }
+                .off-card__btn_show {
+                }
+                .off-card__btn_hide {
+                }
+                .btn {
+                }
+              }
+              .btn_cons {
+            
+              }
+              .btn_calc {
+                
+              }
+
+              .btn_modal {
+
+              }
+            }
+          }
+        }
+
+        .swiper-button-prev-offer {
+          position: absolute;
+          top: 53%;
+          left: -40px;
+          transform: translateY(-50%);
+          cursor: pointer;
+
+          &::after {
+            content: "";
+            position: absolute;
+            inset: -12px -20px;
+          }
+        }
+
+        .swiper-button-next-offer {
+          position: absolute;
+          top: 53%;
+          right: -40px;
+          transform: translateY(-50%);
+          cursor: pointer;
+
+          &::after {
+            content: "";
+            position: absolute;
+            inset: -12px -20px;
+          }
+
+
+        }
+      }
+    }
+  }
+
   .solutions {
     background: linear-gradient(103.66deg, #F0FDFB 27.06%, #CDFAF6 103.06%);
     padding: 100px 20px;
