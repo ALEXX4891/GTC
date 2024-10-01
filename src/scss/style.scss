@@ -204,16 +204,12 @@ a {
 
   @media (max-width: 1060px) {
     padding: 39px 20px;
-
   }
 
-  @media (max-width:760px) {
+  @media (max-width: 760px) {
     padding: 30px 10px;
-
   }
 }
-
-
 
 .section__container {
   display: grid;
@@ -221,18 +217,12 @@ a {
 
   @media (max-width: 1060px) {
     gap: 37px;
-
-
   }
 
   @media (max-width: 660px) {
     gap: 23px;
-
-
   }
 }
-
-
 
 .main {
   @media (max-width: 760px) {
@@ -269,7 +259,6 @@ a {
     font-size: 26px;
     line-height: 31.85px;
   }
-  
 }
 
 .top-block {
@@ -300,8 +289,7 @@ a {
     border-image: linear-gradient(90deg, #11a0a3 0%, #fab502 100%);
     // border: 1px solid;
 
-// border-image: linear-gradient(0deg, #11A0A3, #11A0A3), linear-gradient(90deg, #11A0A3 0%, #FAB502 100%);
-
+    // border-image: linear-gradient(0deg, #11A0A3, #11A0A3), linear-gradient(90deg, #11A0A3 0%, #FAB502 100%);
 
     border-image-slice: 1;
 
@@ -309,15 +297,12 @@ a {
     font-size: 14px;
     font-weight: 500;
     line-height: 18.2px;
-    text-align: right;    
-    color: #F8B403;
+    text-align: right;
+    color: #f8b403;
 
     @media (max-width: 660px) {
       margin-top: 15px;
-
-      
     }
-
   }
 }
 
@@ -595,7 +580,7 @@ a {
   font-family: OpenSans;
   font-size: 16px;
   font-weight: 400;
-  line-height: 21.79px;  
+  line-height: 21.79px;
   color: #585858;
 
   @media (max-width: 1060px) {
@@ -2419,7 +2404,6 @@ a {
 // --------------------------------------- GLAVNAYA start ---------------------------------------
 
 .glavnaya {
-
   .banner {
     .banner__container {
       display: grid;
@@ -2468,7 +2452,7 @@ a {
 
             @media (max-width: 660px) {
               font-size: 30px;
-              line-height: 36.75px;              
+              line-height: 36.75px;
             }
           }
 
@@ -2483,7 +2467,7 @@ a {
 
             @media (max-width: 660px) {
               font-size: 18px;
-              line-height: 20.88px;              
+              line-height: 20.88px;
             }
           }
 
@@ -2496,7 +2480,6 @@ a {
             @media (max-width: 660px) {
               max-width: 100%;
               gap: 16px;
-
             }
 
             .banner__btn {
@@ -2510,7 +2493,6 @@ a {
                 font-size: 17px;
                 font-weight: 500;
                 line-height: 20.01px;
-
               }
 
               @media (max-width: 660px) {
@@ -2519,7 +2501,7 @@ a {
                 width: 100%;
 
                 font-size: 16px;
-                line-height: 19.41px;              
+                line-height: 19.41px;
               }
             }
           }
@@ -2577,9 +2559,9 @@ a {
           font-size: 16px;
           font-weight: 500;
           line-height: 19.41px;
-          text-align: left;              
+          text-align: left;
           color: #117074;
-          
+
           @media (max-width: 1060px) {
             right: 40px;
             bottom: 40px;
@@ -2587,13 +2569,11 @@ a {
 
           @media (max-width: 660px) {
             font-size: 14px;
-            line-height: 16.48px;         
+            line-height: 16.48px;
             right: 40px;
             bottom: 140px;
-          padding: 10px;
-          gap: 11px;
-
-
+            padding: 10px;
+            gap: 11px;
           }
 
           .swiper-pagination {
@@ -2603,9 +2583,7 @@ a {
             left: initial;
 
             .swiper-pagination-total {
-
-
-            }        
+            }
           }
 
           .swiper-button {
@@ -2686,7 +2664,6 @@ a {
               top: 6px;
               right: 20px;
               height: 83%;
-
             }
           }
 
@@ -2710,7 +2687,6 @@ a {
 
   .about {
     .container {
-  
       .about__bot-block {
         display: grid;
         grid-template-columns: 1fr 445px;
@@ -2718,14 +2694,14 @@ a {
 
         @media (max-width: 1060px) {
           grid-template-columns: 1fr 385px;
-          gap: 25px;          
+          gap: 25px;
         }
 
         @media (max-width: 760px) {
           grid-template-columns: 1fr;
-          gap: 25px;          
+          gap: 25px;
         }
-    
+
         .about__img-block {
           width: 100%;
           height: 446px;
@@ -2735,14 +2711,13 @@ a {
           @media (max-width: 1060px) {
             height: 303px;
           }
-    
+
           & img {
             object-position: right;
             transform: none;
             transition: transform 0.3s ease-in-out;
-            
           }
-    
+
           &:hover img {
             transform: scale(1.05);
           }
@@ -2763,11 +2738,11 @@ a {
       gap: 48px;
 
       @media (max-width: 1060px) {
-        gap: 38px;        
+        gap: 38px;
       }
 
       @media (max-width: 660px) {
-        gap: 23px;        
+        gap: 23px;
       }
 
       .advantages__list {
@@ -2777,12 +2752,11 @@ a {
         gap: 25px;
 
         @media (max-width: 1060px) {
-          gap: 15px;          
+          gap: 15px;
         }
 
         @media (max-width: 660px) {
           grid-template-columns: 1fr;
-        
         }
 
         .adv-card {
@@ -2790,26 +2764,27 @@ a {
           gap: 13px;
           grid-template-rows: auto auto 1fr;
           padding: 25px;
-          background: #FFFFFF;
-          box-shadow: 4px 4px 8px rgba(30, 109, 109, 0.06), 1px 1px 3px rgba(8, 72, 72, 0.07), inset 0 0 0 rgba(8, 72, 72, 0.07), inset 0 0 0 rgba(8, 72, 72, 0.07);
+          background: #ffffff;
+          box-shadow: 4px 4px 8px rgba(30, 109, 109, 0.06), 1px 1px 3px rgba(8, 72, 72, 0.07),
+            inset 0 0 0 rgba(8, 72, 72, 0.07), inset 0 0 0 rgba(8, 72, 72, 0.07);
           border-radius: 10px;
           transition: box-shadow 0.3s ease-in-out;
 
           @media (max-width: 660px) {
-            padding: 15px 15px 21px 15px;          
+            padding: 15px 15px 21px 15px;
           }
 
           &:hover {
-            box-shadow: 0 0 0 rgba(30, 109, 109, 0.06), 0 0 0 rgba(8, 72, 72, 0.07), inset 4px 4px 8px rgba(30, 109, 109, 0.06), inset 1px 1px 3px rgba(8, 72, 72, 0.07);
-                        
-            svg path{
-              fill: #FAB502;
-            }
+            box-shadow: 0 0 0 rgba(30, 109, 109, 0.06), 0 0 0 rgba(8, 72, 72, 0.07),
+              inset 4px 4px 8px rgba(30, 109, 109, 0.06), inset 1px 1px 3px rgba(8, 72, 72, 0.07);
 
+            svg path {
+              fill: #fab502;
+            }
           }
 
-          & svg path{
-            fill: #11A0A3;
+          & svg path {
+            fill: #11a0a3;
             transition: fill 0.3s ease-in-out;
           }
 
@@ -2819,11 +2794,11 @@ a {
             font-weight: 600;
             line-height: 29.4px;
             text-align: left;
-            color: #052B2E;
+            color: #052b2e;
 
-            @media (max-width: 660px) { 
+            @media (max-width: 660px) {
               font-size: 20px;
-              line-height: 24.5px;              
+              line-height: 24.5px;
             }
           }
 
@@ -2835,12 +2810,12 @@ a {
             text-align: left;
             color: #585858;
 
-            @media (max-width: 660px) { 
+            @media (max-width: 660px) {
               font-size: 14px;
               line-height: 19.07px;
             }
           }
-          
+
           .adv-card-link {
             margin-top: 35px;
             display: grid;
@@ -2854,11 +2829,10 @@ a {
               fill: #117074;
             }
 
-            @media (max-width: 660px) { 
+            @media (max-width: 660px) {
               font-size: 16px;
               line-height: 21.79px;
-            margin-top: 0;
-
+              margin-top: 0;
             }
 
             &:hover {
@@ -2876,12 +2850,11 @@ a {
           }
         }
       }
-      
+
       .advantages__btn {
         justify-self: center;
       }
     }
-
   }
 
   .offers {
@@ -2895,7 +2868,7 @@ a {
 
       .offers__slider-block {
         position: relative;
-          min-width: 0;
+        min-width: 0;
 
         // display: grid;
         // gap: 23px;
@@ -2911,7 +2884,6 @@ a {
 
           @media (max-width: 1060px) {
             margin-bottom: 23px;
-
           }
 
           @media (max-width: 660px) {
@@ -2932,12 +2904,11 @@ a {
             margin: 0 25px;
           }
 
-
           .swiper-wrapper {
             .off-card {
               height: 607px;
               box-shadow: 3px 4px 8px rgba(137, 150, 150, 0.06), 0px 0px 3px rgba(35, 92, 92, 0.07);
-              border-radius: 15px;
+              border-radius: 10px;
               overflow: hidden;
 
               @media (max-width: 1060px) {
@@ -2954,7 +2925,7 @@ a {
               .off-card__img {
                 height: 332px;
                 width: 100%;
-                border-radius: 15px;
+                border-radius: 10px;
                 overflow: hidden;
 
                 @media (max-width: 1060px) {
@@ -2966,13 +2937,11 @@ a {
                 display: grid;
                 padding: 30px 25px;
                 gap: 15px;
-                background: #FFFFFF;
+                background: #ffffff;
 
                 @media (max-width: 660px) {
                   gap: 20px;
-
                 }
-
               }
               .off-card__title {
                 font-family: Gilroy;
@@ -2980,7 +2949,7 @@ a {
                 font-weight: 600;
                 line-height: 34.3px;
                 text-align: left;
-                color: #052B2E;
+                color: #052b2e;
 
                 @media (max-width: 960px) {
                   font-size: 24px;
@@ -3012,14 +2981,11 @@ a {
                 }
               }
               .btn_cons {
-            
               }
               .btn_calc {
-                
               }
 
               .btn_modal {
-
               }
             }
           }
@@ -3036,7 +3002,6 @@ a {
           @media (max-width: 1360px) {
             left: 0px;
             top: 60%;
-
           }
 
           @media (max-width: 660px) {
@@ -3061,7 +3026,6 @@ a {
           @media (max-width: 1360px) {
             right: 0px;
             top: 60%;
-
           }
 
           @media (max-width: 660px) {
@@ -3073,31 +3037,25 @@ a {
             position: absolute;
             inset: -12px -20px;
           }
-
-
         }
       }
     }
   }
 
   .solutions {
-    background: linear-gradient(103.66deg, #F0FDFB 27.06%, #CDFAF6 103.06%);
+    background: linear-gradient(103.66deg, #f0fdfb 27.06%, #cdfaf6 103.06%);
     padding: 100px 20px;
 
     @media (max-width: 1060px) {
       padding: 80px 20px;
-
-
     }
-
 
     .container {
       display: grid;
       gap: 40px;
 
       @media (max-width: 1060px) {
-        // gap: 35px; 
-  
+        // gap: 35px;
       }
 
       .solutions__list {
@@ -3109,15 +3067,13 @@ a {
         @media (max-width: 660px) {
           grid-template-columns: 1fr;
           gap: 16.5px 10px;
-
-
         }
       }
 
       .solutions__item {
         position: relative;
         padding: 25px 20px 25px 105px;
-        background: #FFFFFF;
+        background: #ffffff;
         border-radius: 4px;
         display: block;
         align-content: center;
@@ -3125,14 +3081,10 @@ a {
 
         @media (max-width: 1060px) {
           // padding: 27px 20px 27px 105px;
-
-
         }
 
         @media (max-width: 660px) {
           // padding: 27px 20px 27px 75px;
-
-
         }
       }
 
@@ -3160,11 +3112,164 @@ a {
       .btn {
         justify-self: center;
         font-size: 18px;
-
       }
     }
   }
 
+  .types {
+    padding: 98px 20px;
+
+    @media (max-width: 1060px) {
+      padding: 78px 20px;
+    }
+
+    @media (max-width: 660px) {
+      padding: 39px 20px;
+    }
+
+    .container {
+      display: grid;
+      gap: 50px;
+
+      @media (max-width: 1060px) {
+        gap: 40px;
+      }
+
+      .types__list {
+        display: grid;
+        gap: 25px;
+
+        .type-card {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-areas:
+            "a ."
+            "b c";
+          padding: 50px;
+          gap: 15px 50px;
+
+          max-width: 100%;
+
+          background: #f0fdfb;
+          box-shadow: 17px 18px 10px rgba(8, 43, 43, 0.01), 9px 10px 8px rgba(8, 43, 43, 0.04),
+            4px 4px 6px rgba(8, 43, 43, 0.06), 1px 1px 3px rgba(8, 43, 43, 0.07);
+          border-radius: 10px;
+
+
+          @media (max-width: 1260px) {
+            grid-template-columns: 1fr;
+
+            grid-template-areas:
+            "a"
+            "c"
+            "b";
+          padding: 37px;
+
+          }
+
+          @media (max-width: 660px) {
+            padding: 15px;
+          }
+
+          .type-card__title {
+            grid-area: a;
+            font-family: Gilroy;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29.4px;
+            text-align: left;
+            color: #052b2e;
+
+            @media (max-width: 1060px) {
+              font-size: 22px;
+              line-height: 26.95px;
+            }
+
+            @media (max-width: 660px) {
+              font-size: 20px;
+              line-height: 24.5px;
+            }
+          }
+          .type-card__text-block {
+            grid-area: b;
+            display: grid;
+            gap: 25px;
+
+            .type-card__subtitle {
+              font-family: OpenSans;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 21.79px;
+              text-align: left;
+              color: #222;
+
+              @media (max-width: 1060px) {
+                padding-top: 10px;
+                font-size: 15px;
+                line-height: 20.43px;
+              }
+
+              @media (max-width: 660px) {
+                font-size: 14px;
+                line-height: 19.07px;
+              }
+            }
+            .type-card__text {
+              font-family: OpenSans;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 30.3px;
+              text-align: left;
+              color: #585858;
+
+              @media (max-width: 1060px) {
+                font-size: 15px;
+                line-height: 29.43px;
+              }
+
+              @media (max-width: 660px) {
+                font-size: 14px;
+                line-height: 26.07px;
+              }
+            }
+            .btn {
+              margin-top: 23px;
+            }
+          }
+
+          .type-card__image-block {
+            grid-area: c;
+            
+            
+            .type-card__image {
+              border-radius: 10px;
+              overflow: hidden;
+              height: 350px;
+              width: 100%;
+              
+              @media (max-width: 1260px) {
+                aspect-ratio: 716 / 349;
+                max-width: 716px;
+                height: auto;
+              }
+
+              @media (max-width: 460px) {
+                aspect-ratio: 554 / 349;
+              }
+            }
+
+            .type-card__image img {
+              transition: transform 0.3s ease-in-out;
+            }
+
+            .type-card__image:hover img {
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // --------------------------------------- GLAVNAYA end ---------------------------------------
