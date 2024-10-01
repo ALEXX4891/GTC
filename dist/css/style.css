@@ -2251,6 +2251,7 @@ a {
 .glavnaya .banner .banner__container .banner__left-block .swiper-navigation .swiper-button {
   position: relative;
   cursor: pointer;
+  color: #117074;
 }
 .glavnaya .banner .banner__container .banner__left-block .swiper-navigation .swiper-button::after {
   content: "";
@@ -2442,7 +2443,7 @@ a {
   }
 }
 .glavnaya .advantages .container .advantages__list .adv-card .adv-card-text {
-  font-family: Open Sans;
+  font-family: OpenSans;
   font-size: 16px;
   font-weight: 400;
   line-height: 21.79px;
@@ -2478,7 +2479,7 @@ a {
   gap: 15px;
 }
 .glavnaya .advantages .container .advantages__list .adv-card .adv-card-link .adv-card-link-text {
-  font-family: Open Sans;
+  font-family: OpenSans;
   font-size: 16px;
   font-weight: 400;
   line-height: 21.79px;
@@ -2492,36 +2493,86 @@ a {
   display: grid;
   gap: 40px;
 }
+@media (max-width: 660px) {
+  .glavnaya .offers .container {
+    gap: 25px;
+  }
+}
 .glavnaya .offers .container .offers__slider-block {
   position: relative;
   min-width: 0;
 }
 .glavnaya .offers .container .offers__slider-block .offers__slider-title {
-  font-family: Open Sans;
+  font-family: OpenSans;
   font-size: 22px;
   font-weight: 400;
   line-height: 29.96px;
   text-align: left;
   color: #585858;
-  margin-bottom: 23px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1060px) {
+  .glavnaya .offers .container .offers__slider-block .offers__slider-title {
+    margin-bottom: 23px;
+  }
+}
+@media (max-width: 660px) {
+  .glavnaya .offers .container .offers__slider-block .offers__slider-title {
+    font-size: 18px;
+    line-height: 24.51px;
+  }
 }
 .glavnaya .offers .container .offers__slider-block .offers__slider-wrap {
   min-width: 0;
 }
+@media (max-width: 1360px) {
+  .glavnaya .offers .container .offers__slider-block .offers__slider-wrap {
+    left: 0px;
+    margin: 0 35px;
+  }
+}
+@media (max-width: 660px) {
+  .glavnaya .offers .container .offers__slider-block .offers__slider-wrap {
+    margin: 0 25px;
+  }
+}
 .glavnaya .offers .container .offers__slider-block .offers__slider-wrap .swiper-wrapper .off-card {
   height: 607px;
   box-shadow: 3px 4px 8px rgba(137, 150, 150, 0.06), 0px 0px 3px rgba(35, 92, 92, 0.07);
-  border-radius: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+@media (max-width: 1060px) {
+  .glavnaya .offers .container .offers__slider-block .offers__slider-wrap .swiper-wrapper .off-card {
+    height: 573px;
+  }
+}
+@media (max-width: 660px) {
+  .glavnaya .offers .container .offers__slider-block .offers__slider-wrap .swiper-wrapper .off-card {
+    height: 568px;
+  }
 }
 .glavnaya .offers .container .offers__slider-block .offers__slider-wrap .swiper-wrapper .off-card .off-card__img {
   height: 332px;
   width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+@media (max-width: 1060px) {
+  .glavnaya .offers .container .offers__slider-block .offers__slider-wrap .swiper-wrapper .off-card .off-card__img {
+    height: 280px;
+  }
 }
 .glavnaya .offers .container .offers__slider-block .offers__slider-wrap .swiper-wrapper .off-card .off-card__text-wrap {
   display: grid;
   padding: 30px 25px;
   gap: 15px;
   background: #FFFFFF;
+}
+@media (max-width: 660px) {
+  .glavnaya .offers .container .offers__slider-block .offers__slider-wrap .swiper-wrapper .off-card .off-card__text-wrap {
+    gap: 20px;
+  }
 }
 .glavnaya .offers .container .offers__slider-block .offers__slider-wrap .swiper-wrapper .off-card .off-card__title {
   font-family: Gilroy;
@@ -2531,12 +2582,45 @@ a {
   text-align: left;
   color: #052B2E;
 }
+@media (max-width: 960px) {
+  .glavnaya .offers .container .offers__slider-block .offers__slider-wrap .swiper-wrapper .off-card .off-card__title {
+    font-size: 24px;
+    line-height: 28.5px;
+  }
+}
+@media (max-width: 660px) {
+  .glavnaya .offers .container .offers__slider-block .offers__slider-wrap .swiper-wrapper .off-card .off-card__title {
+    font-size: 20px;
+    line-height: 24.5px;
+  }
+}
+@media (max-width: 660px) {
+  .glavnaya .offers .container .offers__slider-block .offers__slider-wrap .swiper-wrapper .off-card .off-card__subtitle {
+    font-size: 14px;
+    line-height: 110%;
+  }
+}
+.glavnaya .offers .container .offers__slider-block .offers__slider-wrap .swiper-wrapper .off-card .off-card__text {
+  padding-top: 10px;
+}
 .glavnaya .offers .container .offers__slider-block .swiper-button-prev-offer {
   position: absolute;
-  top: 53%;
-  left: -40px;
+  top: 56%;
+  left: -42px;
+  width: 14px;
   transform: translateY(-50%);
   cursor: pointer;
+}
+@media (max-width: 1360px) {
+  .glavnaya .offers .container .offers__slider-block .swiper-button-prev-offer {
+    left: 0px;
+    top: 60%;
+  }
+}
+@media (max-width: 660px) {
+  .glavnaya .offers .container .offers__slider-block .swiper-button-prev-offer {
+    top: 61%;
+  }
 }
 .glavnaya .offers .container .offers__slider-block .swiper-button-prev-offer::after {
   content: "";
@@ -2545,10 +2629,22 @@ a {
 }
 .glavnaya .offers .container .offers__slider-block .swiper-button-next-offer {
   position: absolute;
-  top: 53%;
-  right: -40px;
+  top: 56%;
+  right: -42px;
+  width: 14px;
   transform: translateY(-50%);
   cursor: pointer;
+}
+@media (max-width: 1360px) {
+  .glavnaya .offers .container .offers__slider-block .swiper-button-next-offer {
+    right: 0px;
+    top: 60%;
+  }
+}
+@media (max-width: 660px) {
+  .glavnaya .offers .container .offers__slider-block .swiper-button-next-offer {
+    top: 61%;
+  }
 }
 .glavnaya .offers .container .offers__slider-block .swiper-button-next-offer::after {
   content: "";

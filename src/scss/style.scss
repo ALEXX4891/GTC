@@ -2611,6 +2611,7 @@ a {
           .swiper-button {
             position: relative;
             cursor: pointer;
+            color: #117074;
 
             &::after {
               content: "";
@@ -2827,7 +2828,7 @@ a {
           }
 
           .adv-card-text {
-            font-family: Open Sans;
+            font-family: OpenSans;
             font-size: 16px;
             font-weight: 400;
             line-height: 21.79px;
@@ -2865,7 +2866,7 @@ a {
             }
 
             .adv-card-link-text {
-              font-family: Open Sans;
+              font-family: OpenSans;
               font-size: 16px;
               font-weight: 400;
               line-height: 21.79px;
@@ -2888,6 +2889,10 @@ a {
       display: grid;
       gap: 40px;
 
+      @media (max-width: 660px) {
+        gap: 25px;
+      }
+
       .offers__slider-block {
         position: relative;
           min-width: 0;
@@ -2896,22 +2901,52 @@ a {
         // gap: 23px;
 
         .offers__slider-title {
-          font-family: Open Sans;
+          font-family: OpenSans;
           font-size: 22px;
           font-weight: 400;
           line-height: 29.96px;
           text-align: left;
           color: #585858;
-          margin-bottom: 23px;
+          margin-bottom: 30px;
+
+          @media (max-width: 1060px) {
+            margin-bottom: 23px;
+
+          }
+
+          @media (max-width: 660px) {
+            font-size: 18px;
+            line-height: 24.51px;
+          }
         }
 
         .offers__slider-wrap {
           min-width: 0;
+
+          @media (max-width: 1360px) {
+            left: 0px;
+            margin: 0 35px;
+          }
+
+          @media (max-width: 660px) {
+            margin: 0 25px;
+          }
+
+
           .swiper-wrapper {
             .off-card {
               height: 607px;
               box-shadow: 3px 4px 8px rgba(137, 150, 150, 0.06), 0px 0px 3px rgba(35, 92, 92, 0.07);
-              border-radius: 10px;
+              border-radius: 15px;
+              overflow: hidden;
+
+              @media (max-width: 1060px) {
+                height: 573px;
+              }
+
+              @media (max-width: 660px) {
+                height: 568px;
+              }
 
               &.off-card_cons {
               }
@@ -2919,6 +2954,12 @@ a {
               .off-card__img {
                 height: 332px;
                 width: 100%;
+                border-radius: 15px;
+                overflow: hidden;
+
+                @media (max-width: 1060px) {
+                  height: 280px;
+                }
               }
 
               .off-card__text-wrap {
@@ -2926,6 +2967,11 @@ a {
                 padding: 30px 25px;
                 gap: 15px;
                 background: #FFFFFF;
+
+                @media (max-width: 660px) {
+                  gap: 20px;
+
+                }
 
               }
               .off-card__title {
@@ -2935,10 +2981,25 @@ a {
                 line-height: 34.3px;
                 text-align: left;
                 color: #052B2E;
+
+                @media (max-width: 960px) {
+                  font-size: 24px;
+                  line-height: 28.5px;
+                }
+
+                @media (max-width: 660px) {
+                  font-size: 20px;
+                  line-height: 24.5px;
+                }
               }
               .off-card__subtitle {
+                @media (max-width: 660px) {
+                  font-size: 14px;
+                  line-height: 110%;
+                }
               }
               .off-card__text {
+                padding-top: 10px;
               }
               .off-card__btn-wrap {
                 .off-card__btn {
@@ -2966,10 +3027,21 @@ a {
 
         .swiper-button-prev-offer {
           position: absolute;
-          top: 53%;
-          left: -40px;
+          top: 56%;
+          left: -42px;
+          width: 14px;
           transform: translateY(-50%);
           cursor: pointer;
+
+          @media (max-width: 1360px) {
+            left: 0px;
+            top: 60%;
+
+          }
+
+          @media (max-width: 660px) {
+            top: 61%;
+          }
 
           &::after {
             content: "";
@@ -2980,10 +3052,21 @@ a {
 
         .swiper-button-next-offer {
           position: absolute;
-          top: 53%;
-          right: -40px;
+          top: 56%;
+          right: -42px;
+          width: 14px;
           transform: translateY(-50%);
           cursor: pointer;
+
+          @media (max-width: 1360px) {
+            right: 0px;
+            top: 60%;
+
+          }
+
+          @media (max-width: 660px) {
+            top: 61%;
+          }
 
           &::after {
             content: "";
@@ -3066,7 +3149,7 @@ a {
       }
 
       .solutions__item-text {
-        // font-family: Open Sans;
+        // font-family: OpenSans;
         // font-size: 16px;
         // font-weight: 400;
         // line-height: 21.79px;

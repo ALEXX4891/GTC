@@ -939,10 +939,22 @@ new Swiper(".offers_swiper", {
   // },
   breakpoints: {
     0: {
-      // slidesPerView: 1,
+      slidesPerView: 1,
       // spaceBetween: 20,
+      
+    },
+    660: {
+      spaceBetween: 15,
+      slidesPerView: 2,
+
+
+      // spaceBetween: 40,
     },
     960: {
+      spaceBetween: 25,
+      slidesPerView: 2,
+
+
       // spaceBetween: 40,
     },
   },
