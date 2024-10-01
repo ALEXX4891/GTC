@@ -8,7 +8,7 @@ const main = document.querySelector(".main");
 if (header) {
   document.addEventListener("scroll", (e) => {
     if (window.innerWidth > 760) {
-      console.log(window.scrollY);
+      // console.log(window.scrollY);
       if (window.scrollY > 115) {      
         header.classList.add("header_scroll");
         main.classList.add("main_scroll");
@@ -959,6 +959,130 @@ new Swiper(".offers_swiper", {
     },
   },
 });
+
+new Swiper(".res-card_swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  // loop: true,
+  // allowTouchMove: true,
+  // slidesPerView: auto, // сколько слайдов показывать, можно дробно
+  slidesPerView: 1, // сколько слайдов показывать, можно дробно
+  // slidersPerGroup: 3, // сколько слайдов в группе
+  // centeredSlides: true, //выравнивание слайдов по центру
+  // initialSlide: 0, //начальный слайд (c нуля)
+
+  spaceBetween: 50,
+  // slideToClickedSlide: true, //перелистывание слайдов по клику
+  // grabCursor: true, //меняет курсор при наведении на руку
+  watchOverflow: true, //отключает слайдер если все слайды входят в область видимости
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next_res-card__right",
+    prevEl: ".swiper-button-prev_res-card__right",
+  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    // type: "fraction",
+    clickable: true,
+  },
+  // mousewheel: { //перелистывание слайдов по мышке
+  //   sensitivity: 1,
+  //   eventsTarget: ".news__slider",
+  // },
+  // keyboard: { //перелистывание слайдов по нажатию клавиш
+  //   enabled: true,
+  //   onlyInViewport: true,
+  //   // pageUpDown: true,
+  // },
+  breakpoints: {
+    0: {
+      // slidesPerView: 1,
+      // spaceBetween: 20,
+    },
+    960: {
+      // spaceBetween: 40,
+    },
+  },
+});
+
+const thumbs_swiper = new Swiper(".results_top_swiper", {
+  loop: true,
+  spaceBetween: 15,
+  slidesPerView: 4, // сколько слайдов показывать, можно дробно
+  freeMode: true, // перелистывание слайдов при свободном положении
+  watchSlidesProgress: true, //перелистывание слайдов при свободном положении
+  navigation: {
+    nextEl: ".swiper-button-next_res",
+    prevEl: ".swiper-button-prev_res",
+  },
+});
+
+new Swiper(".results_bot_swiper", {
+  // Optional parameters
+  // direction: "horizontal",
+  loop: true,
+  // allowTouchMove: true,
+  // slidesPerView: auto, // сколько слайдов показывать, можно дробно
+  // slidesPerView: 1, // сколько слайдов показывать, можно дробно
+  // slidersPerGroup: 3, // сколько слайдов в группе
+  // centeredSlides: true, //выравнивание слайдов по центру
+  // initialSlide: 0, //начальный слайд (c нуля)
+
+  spaceBetween: 10,
+  thumbs: {
+    swiper: thumbs_swiper,
+  },
+  // slideToClickedSlide: true, //перелистывание слайдов по клику
+  // grabCursor: true, //меняет курсор при наведении на руку
+  // watchOverflow: true, //отключает слайдер если все слайды входят в область видимости
+
+  // Navigation arrows
+  // navigation: {
+  //   nextEl: ".swiper-button-next_res-card__right",
+  //   prevEl: ".swiper-button-prev_res-card__right",
+  // },
+
+  // autoplay: {
+  //   delay: 3000,
+  // },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    // type: "fraction",
+    clickable: true,
+  },
+  // mousewheel: { //перелистывание слайдов по мышке
+  //   sensitivity: 1,
+  //   eventsTarget: ".news__slider",
+  // },
+  // keyboard: { //перелистывание слайдов по нажатию клавиш
+  //   enabled: true,
+  //   onlyInViewport: true,
+  //   // pageUpDown: true,
+  // },
+  breakpoints: {
+    0: {
+      // slidesPerView: 1,
+      // spaceBetween: 20,
+    },
+    960: {
+      // spaceBetween: 40,
+    },
+  },
+});
+
+
 
 new Swiper(".regions_swiper", {
   // Optional parameters
