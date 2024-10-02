@@ -3250,16 +3250,16 @@ a {
   }
 }
 .glavnaya .team {
-  padding: 100px 20px;
+  padding: 100px 20px 50px;
 }
 @media (max-width: 1060px) {
   .glavnaya .team {
-    padding: 80px 20px;
+    padding: 80px 20px 40px;
   }
 }
 @media (max-width: 660px) {
   .glavnaya .team {
-    padding: 60px 10px;
+    padding: 60px 10px 30px;
   }
 }
 .glavnaya .team .container {
@@ -3370,6 +3370,29 @@ a {
   .glavnaya .team .container .team__list .team-card .team-card__text-block .team-card__contact {
     font-size: 16px;
     line-height: 18.5px;
+  }
+}
+.glavnaya .partners {
+  padding: 40px 20px;
+}
+.glavnaya .partners .container {
+  display: grid;
+  gap: 50px;
+}
+.glavnaya .partners .container .partners__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.glavnaya .partners .container .partners__list .partners__item {
+  width: auto;
+  height: 85px;
+}
+@media (max-width: 1060px) {
+  .glavnaya .partners .container .partners__list .partners__item {
+    width: auto;
+    height: 71px;
   }
 }
 

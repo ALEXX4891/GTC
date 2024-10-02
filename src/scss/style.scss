@@ -3712,14 +3712,14 @@ a {
   }
 
   .team {
-    padding: 100px 20px;
+    padding: 100px 20px 50px;
 
     @media (max-width: 1060px) {
-      padding: 80px 20px;
+      padding: 80px 20px 40px;
     }
 
     @media (max-width: 660px) {
-      padding: 60px 10px;
+      padding: 60px 10px 30px;
     }
 
     .container {
@@ -3830,6 +3830,35 @@ a {
               }
 
             }
+          }
+        }
+      }
+    }
+  }
+
+  .partners {
+    padding: 40px 20px;
+    .container {
+      display: grid;
+      gap: 50px;
+
+      .partners__list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media (max-width: 890px) {
+          // justify-content: center;
+        }
+
+        .partners__item {
+          width: auto;
+          height: 85px;
+
+          @media (max-width: 1060px) {
+            width: auto;
+            height: 71px;
           }
         }
       }
