@@ -3375,15 +3375,40 @@ a {
 .glavnaya .partners {
   padding: 40px 20px;
 }
+@media (max-width: 1060px) {
+  .glavnaya .partners {
+    padding: 80px 20px;
+  }
+}
+@media (max-width: 660px) {
+  .glavnaya .partners {
+    padding: 30px 10px;
+  }
+}
 .glavnaya .partners .container {
   display: grid;
   gap: 50px;
+}
+@media (max-width: 1060px) {
+  .glavnaya .partners .container {
+    gap: 35px;
+  }
+}
+@media (max-width: 660px) {
+  .glavnaya .partners .container {
+    gap: 25px;
+  }
 }
 .glavnaya .partners .container .partners__list {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   gap: 20px;
+}
+@media (max-width: 760px) {
+  .glavnaya .partners .container .partners__list {
+    justify-content: center;
+  }
 }
 .glavnaya .partners .container .partners__list .partners__item {
   width: auto;
@@ -3393,6 +3418,11 @@ a {
   .glavnaya .partners .container .partners__list .partners__item {
     width: auto;
     height: 71px;
+  }
+}
+@media (max-width: 500px) {
+  .glavnaya .partners .container .partners__list .partners__item {
+    height: 47px;
   }
 }
 
