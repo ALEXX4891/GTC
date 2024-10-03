@@ -1,0 +1,36 @@
+@@include('./html/header.html', {
+"title": "Popup",
+"page": "Popup",
+})
+
+  <main class="main ">
+    <section class="section ">
+      <div class="container ">
+        <ul class="popup__list">
+
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    window.onload = () => {
+      const popupArr = document.querySelectorAll('.popup');
+      if (popupArr.length > 0) {
+        popupArr.forEach((popup) => {
+          const li = document.createElement('li');
+          li.classList.add('popup__item');
+          li.innerHTML = `<button style="margin-bottom: 10px" class="btn btn_light-green popup-link" href="#${popup.getAttribute('id')}">${popup.getAttribute('id')}</button>`;
+          document.querySelector('.popup__list').appendChild(li)
+          
+          popup.classList.add('active')
+        })
+      }
+    }
+
+  </script>
+@@include('./html/footer.html', {})
+
+
+
+

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-  <title>Новости</title>
+  <title>Popup</title>
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="img/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="img/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/style.css">  
 </head>
 
-<body class="news-page" data-page="news-page">
+<body class="Popup" data-page="Popup">
   <header class="header lock-padding">
     <section class="section header__section">
       <div class="header__container container">
@@ -146,78 +146,32 @@
     </section>
   </header>
 
-<main class="main">
-  <section class="section news-page__section">
-    <div class="container news-page__container">
-      <div class="top-block">
-        <h1 class="top-block__title section-title" style="text-wrap: nowrap;">
-          Новости
-        </h1>
-        <p class="top-block__number">          
-        </p>
+  <main class="main ">
+    <section class="section ">
+      <div class="container ">
+        <ul class="popup__list">
+
+        </ul>
       </div>
+    </section>
+  </main>
 
-      <ul class="news-page__list">
-        <li class="news-page__item">
-          <div class="news-page__item-img">
-            <img src="img/news-img-1.jpg" alt="">
-          </div>
-          <div class="news-page__item-text-wrapper">
-            <h2 class="news-page__item-title">
-              Система контроля и учёта топлива – экономия в режиме реального времени
-            </h2>
-            <p class="news-page__item-text">
-              Оборудование контроля топлива «СКАУТ» позволяет собирать и анализировать данные в реальном времени и формировать нужные руководителю предприятия отчеты
-            </p>
-            <a class="news-page__item-btn btn btn_trans-orange" href="novosti-item.html">
-              Подробнее
-            </a>
-          </div>
+  <script>
+    window.onload = () => {
+      const popupArr = document.querySelectorAll('.popup');
+      if (popupArr.length > 0) {
+        popupArr.forEach((popup) => {
+          const li = document.createElement('li');
+          li.classList.add('popup__item');
+          li.innerHTML = `<button style="margin-bottom: 10px" class="btn btn_light-green popup-link" href="#${popup.getAttribute('id')}">${popup.getAttribute('id')}</button>`;
+          document.querySelector('.popup__list').appendChild(li)
+          
+          popup.classList.add('active')
+        })
+      }
+    }
 
-        </li>
-
-        <li class="news-page__item">
-          <div class="news-page__item-img">
-            <img src="img/news-img-2.jpg" alt="">
-          </div>
-          <div class="news-page__item-text-wrapper">
-            <h2 class="news-page__item-title">
-              Система мониторинга расхода топлива «СКАУТ» – вопросы и ответы
-            </h2>
-            <p class="news-page__item-text">
-              Профессиональное оборудование для контроля топлива от компании «СКАУТ
-                                    </p>
-            <a class="news-page__item-btn btn btn_trans-orange" href="novosti-item.html">
-              Подробнее
-            </a>
-          </div>
-
-        </li>
-
-        <li class="news-page__item">
-          <div class="news-page__item-img">
-            <img src="img/news-img-2.jpg" alt="">
-          </div>
-          <div class="news-page__item-text-wrapper">
-            <h2 class="news-page__item-title">
-              Система мониторинга расхода топлива «СКАУТ» – вопросы и ответы
-            </h2>
-            <p class="news-page__item-text">
-              Профессиональное оборудование для контроля топлива от компании «СКАУТ
-                                    </p>
-            <a class="news-page__item-btn btn btn_trans-orange" href="novosti-item.html">
-              Подробнее
-            </a>
-          </div>
-
-        </li>
-
-      </ul>
-
-  </section>
-
-</main>
-
+  </script>
 <footer class="footer">
   <div class="section footer__section">
     <div class="container footer__container">
@@ -852,3 +806,7 @@
 </body>
 
 </html>
+
+
+
+
