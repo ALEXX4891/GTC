@@ -2225,14 +2225,42 @@
     </div>
   </section>
 
-  <section style="display: none" class="section section_consultations consultations">
+  <section class="section section_consultations consultations">
+    <div class="consultations__img">
+      <img  src="img/consult.png" alt="">
+    </div>
+    
     <div class="consultations_top-block">
 
     </div>
 
     <div class="consultations_bot-block">
+
       <div class="container consultations__container">
 
+        <h2 class="consultations__title section-title">
+          Нужна консультация?
+        </h2>
+
+        <p class="consultations__text">
+          Укажите номер телефона, мы свяжемся с Вами и подберём подходящее решение
+        </p>
+
+        <form class="consultations__form" action="#">
+          <input class="consultations__input phone input" type="tel" name="phone" placeholder="Телефон">
+
+          <button class="consultations__btn btn btn_gray" type="submit">
+            Получить консультацию
+          </button>
+        </form>
+        <div class="consultations__agreement">
+          <span class="consultations__agreement-text">
+            Нажимая на кнопку «Отправить заявку», Вы соглашаетесь с
+          </span>
+          <a class="consultations__agreement-link" href="/policy/agreement">
+            Политикой обработки персональных данных
+          </a>
+        </div>
       </div>
     </div>
   </section>

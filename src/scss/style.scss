@@ -306,6 +306,47 @@ a {
   }
 }
 
+.input {
+  padding: 18px 25px;
+  width: 282px;
+  background: #FFFFFF;
+  border: 1px solid rgba(18, 90, 93, 0.3);
+  border-radius: 5px;
+
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.83px;
+  color: #222;
+
+  transition: border 0.3s ease-in-out;
+
+  @media (max-width: 660px) {
+    font-size: 14px;    
+  }
+
+  &::placeholder {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.83px;
+    color: #7CA5A1;
+
+    @media (max-width: 660px) {
+      font-size: 14px;    
+    }
+  }
+
+  &._error {
+    border: 1px solid red;
+    color: #FF7878;
+  }
+
+  &:hover {
+    border: 1px solid #125A5D;
+  }
+}
+
 .btn {
   display: flex;
   flex-direction: row;
@@ -4001,6 +4042,174 @@ a {
 
         @media (max-width: 660px) {
           height: 315px;
+        }
+      }
+    }
+  }
+
+  .consultations {    
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+
+    .consultations__img {
+      position: absolute;
+      top: 60px;
+      width: 737px;
+      height: 431px;
+      left: 50%;
+      margin-left: 180px;
+
+      @media (max-width: 1920px) {
+        left: 59.5%;
+        width: 38.5vw;
+        height: auto;
+        margin-left: initial;
+
+      }
+
+      @media (max-width: 1360px) {
+        width: 49.5vw;
+        top: 34px;
+        left: 56.5%;
+
+      }
+
+      @media (max-width: 660px) {
+        display: none;
+      }
+
+      & img {
+      }
+    }
+    .consultations_top-block {
+      height: 100px;
+
+      @media (max-width: 1360px) {
+        height: 80px;
+
+      }
+
+      @media (max-width: 660px) {
+        height: 30px;
+
+      }
+
+      
+    }
+    .consultations_bot-block {
+      padding: 100px 20px;
+      background: linear-gradient(99.41deg, #F0FDFB 6.27%, #CDFAF6 92.06%);
+
+      @media (max-width: 1360px) {
+        padding: 80px 20px;
+      }
+
+      @media (max-width: 660px) {
+        padding: 60px 10px;
+      }
+
+      .container {
+        .consultations__container {
+        }
+
+        .consultations__title {
+          margin-bottom: 20px;
+        }
+
+        .consultations__text {
+          margin-bottom: 50px;  
+          max-width: 600px;          
+          font-family: OpenSans;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 24.51px;
+          text-align: left;
+          color: #585858;
+
+          @media (max-width: 1360px) {
+            max-width: 400px;  
+            font-size: 17px;
+            line-height: 23.15px;
+          }
+        }
+
+        .consultations__form {
+          display: grid;
+          grid-auto-flow: column;
+          gap: 25px;
+          margin-bottom: 7px;
+          justify-content: start;
+
+          @media (max-width: 1360px) {
+            margin-bottom: 14px;
+          }
+
+          @media (max-width: 660px) {
+            grid-auto-flow: row;
+            // max-width: 282px;
+            justify-content: initial;
+            gap: 14px;
+            margin-bottom: 15px;            
+          }
+
+          .input {
+            @media (max-width: 1360px) {
+              padding: 14px 40px;
+  
+            }
+
+            @media (max-width: 660px) {
+              padding: 12px 15px;
+              max-width: 283px;
+              width: 100%;
+  
+            }
+
+
+
+
+          }
+          .consultations__btn {
+            padding: 18px 40px;
+  
+            @media (max-width: 1360px) {
+              padding: 14px 40px;
+  
+            }
+
+            @media (max-width: 660px) {
+              padding: 12px 15px;
+              max-width: 283px;
+              width: 100%;
+            }
+          }
+        }
+
+        .consultations__agreement {
+          line-height: 16.34px;
+          font-size: 12px;
+
+
+          @media (max-width: 660px) {
+            max-width: 282px;
+            line-height: 15.34px;
+
+          }
+          .consultations__agreement-text {
+            font-family: OpenSans;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: left;
+            color: #8A8A8A;
+          }
+
+          .consultations__agreement-link {
+            font-family: OpenSans;
+            font-weight: 400;
+            text-align: left;
+            color: #8A8A8A;
+          }
         }
       }
     }
