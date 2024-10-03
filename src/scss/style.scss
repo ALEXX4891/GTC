@@ -206,7 +206,7 @@ a {
     padding: 39px 20px;
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: 660px) {
     padding: 30px 10px;
   }
 }
@@ -3837,14 +3837,14 @@ a {
   }
 
   .partners {
-    padding: 40px 20px;
+    padding: 40px 20px 97px;
 
     @media (max-width: 1060px) {
       padding: 80px 20px;
     }
 
     @media (max-width: 660px) {
-      padding: 30px 10px;
+      padding: 30px 10px 60px;
     }
     .container {
       display: grid;
@@ -3884,6 +3884,123 @@ a {
             height: 47px;
             // height: auto;
           }
+        }
+      }
+    }
+  }
+
+  .geo {
+    .container {
+      display: grid;
+      gap: 25px;
+
+      @media (max-width: 660px) {
+        gap: 20px;
+      }
+      .geo__contacts-block {
+        padding-top: 25px;
+
+        @media (max-width: 1060px) {
+          padding-top: 10px;
+        }
+      }
+      .geo__contacts-list {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px;
+        grid-auto-columns: 275px;
+        justify-content: space-between;
+        align-items: start;
+        align-content: start;
+
+        @media (max-width: 1060px) {
+          grid-auto-columns: 230px;
+
+        }
+
+        @media (max-width: 760px) {
+          grid-auto-columns: 100%;
+          justify-content: center;
+          grid-auto-flow: row;
+        gap: 30px;
+        margin-bottom: 10px;
+
+        }
+      }
+      .geo__contacts-item {
+        display: grid;
+        gap: 10px;
+      }
+      .geo__card-wrap {
+        display: grid;
+        gap: 8px;
+      }
+      .geo__contacts-title {
+        position: relative;
+        padding-left: 35px;
+        font-family: OpenSans;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.34px;
+        text-align: left;
+        color: #585858;
+
+        & svg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 20px;
+          height: 20px;
+        }
+        
+      }
+      .geo__contacts-wrap {
+        display: grid;
+        gap: 10px;
+        // max-width: 265px;
+        width: 100%;
+
+        @media (max-width: 760px) {
+          max-width: 230px;
+
+        }
+      }
+      .geo__contacts-text {
+        padding-left: 35px;
+        font-family: OpenSans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.79px;
+        text-align: left;
+        color: #222;
+
+        &_tel {
+          font-family: Gilroy;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 21.19px;
+          text-align: left;
+          color: #052B2E;
+
+          @media (max-width: 660px) {
+            font-size: 16px;
+            line-height: 18.8px;
+          }
+
+        }
+
+      }
+      .geo__map-block {
+        width: 100%;
+        height: 600px;
+        background: #11A0A3;
+
+        @media (max-width: 1060px) {
+          height: 470px;
+        }
+
+        @media (max-width: 660px) {
+          height: 315px;
         }
       }
     }
