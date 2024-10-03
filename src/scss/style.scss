@@ -4390,6 +4390,219 @@ a {
 // --------------------------------------- NEWS end ---------------------------------------
 // --------------------------------------- NEWS-ITEM start ---------------------------------------
 
+.news-item {
+  .news-item_section {
+    padding: 49px 20px 100px;
+
+    @media (max-width: 1060px) {
+      padding: 40px 20px 80px;
+    }
+
+    @media (max-width: 660px) {
+      padding: 30px 10px 60px;
+    }
+    .container {
+      .news-item__link-back {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 50px;
+
+        font-family: OpenSans;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.79px;
+        text-align: left;
+        color: #585858;
+
+        @media (max-width: 960px) {
+          margin-bottom: 40px;
+        }
+
+        @media (max-width: 660px) {
+          font-size: 14px;
+          line-height: 19.6px;
+          margin-bottom: 30px;
+
+
+        }
+      }
+      .news-item__content {
+      }
+      .news-item__title {
+        margin-bottom: 25px;
+        font-family: Gilroy;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 39.2px;
+        text-align: left;
+        color: #052B2E;
+
+        @media (max-width: 660px) {
+          font-size: 26px;
+          line-height: 31.4px;
+        }
+      }
+      .news-item__desc {
+        margin-bottom: 25px;
+
+        font-family: OpenSans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.79px;
+        text-align: left;
+        color: #585858;
+
+        @media (max-width: 660px) {
+          font-size: 14px;
+          line-height: 19.6px;
+        }
+
+      }
+      .swiper-block {
+        padding: 0 40px 30px;
+        height: 632px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 50px;
+
+        @media (max-width: 1060px) {
+          margin-bottom: 36px;
+
+        }
+
+        @media (max-width: 660px) {
+          height: 280px;
+          padding: 0 32px 30px;
+          margin-bottom: 20px;
+
+
+        }
+
+
+        .news-item__slider {
+            height: 100%;                      
+          .news-item__slider-list {
+          }
+          .news-item__slider-item {
+            border-radius: 10px;
+            overflow: hidden;
+
+            & img {
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              // object-fit: cover;
+              height: 100%;
+              width: auto;
+              // margin: 0 auto;
+            }
+          }
+        }
+
+        .swiper-pagination {
+          bottom: -4px;
+
+          @media (max-width: 660px) {
+            bottom: 1px;
+          }
+
+
+
+          .swiper-pagination-bullet {
+            width: 14px;
+            height: 14px;
+            background: #FAB502;
+            opacity: 0.3;
+
+            @media (max-width: 660px) {
+              width: 10px;
+              height: 10px;
+            }
+
+
+            &.swiper-pagination-bullet-active {
+              opacity: 1;
+            }
+          }
+        }
+
+        .swiper-button{
+          top: 48%;
+          
+          @media (max-width: 660px) {
+            top: 45%;
+          }
+
+          &.swiper-button-next {
+            @media (max-width: 660px) {
+
+              right: 0;
+            }
+          }
+
+
+          &.swiper-button-prev {
+            @media (max-width: 660px) {
+
+              left: 0;
+            }
+          }
+
+
+
+          &::after {
+            font-size: 25px;
+            padding: 10px 15px;
+            color: #117074;
+
+            @media (max-width: 660px) {
+              font-size: 20px;
+            }
+  
+            
+          }
+        }
+        
+      }
+      .news-item__text {
+        font-family: OpenSans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.79px;
+        text-align: left;
+        color: #585858;
+        max-width: 960px;
+
+        @media (max-width: 1060px) {
+          font-size: 15px;
+          line-height: 20.6px;
+        }
+
+        @media (max-width: 660px) {
+          font-size: 14px;
+          line-height: 19px;
+        }
+      
+
+        & b {
+          font-family: Gilroy;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 29.4px;
+          text-align: left;
+          color: #052B2E;
+
+          @media (max-width: 660px) {
+            font-size: 20px;
+            line-height: 26.4px;
+          }
+        }
+      }
+    }
+  }
+}
 // --------------------------------------- NEWS-ITEM end ---------------------------------------
 // --------------------------------------- PROMO start ---------------------------------------
 
