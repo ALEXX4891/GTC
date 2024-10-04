@@ -367,6 +367,108 @@ a {
   border: 1px solid #125A5D;
 }
 
+.radio {
+  position: relative;
+  cursor: pointer;
+  padding: 12px 15px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: start;
+  width: max-content;
+}
+.radio .radio__input {
+  display: none;
+}
+.radio .radio__mark {
+  position: relative;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #11A0A3;
+  background-color: #fff;
+  z-index: 1;
+}
+.radio .radio__mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 5px;
+  background-color: #11A0A3;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+.radio .radio__input:checked + .radio__mark::before {
+  opacity: 1;
+}
+.radio .radio__title {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.79px;
+  text-align: left;
+  color: #117074;
+}
+.radio.radio_disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.checkbox {
+  position: relative;
+  cursor: pointer;
+  padding: 12px 15px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: start;
+  width: max-content;
+}
+.checkbox .checkbox__input {
+  display: none;
+}
+.checkbox .checkbox__mark {
+  position: relative;
+  border-radius: 3px;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #11A0A3;
+  background-color: #fff;
+  z-index: 1;
+}
+.checkbox .checkbox__mark::before {
+  content: "";
+  background-image: url(../img/mark.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.checkbox .checkbox__input:checked + .checkbox__mark::before {
+  opacity: 1;
+}
+.checkbox .checkbox__title {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.79px;
+  text-align: left;
+  color: #117074;
+}
+.checkbox.checkbox_disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
 .btn {
   display: flex;
   flex-direction: row;

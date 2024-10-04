@@ -1172,6 +1172,22 @@ new Swiper(".news_swiper", {
 
 // -------------------------------------------- end slider: ---------------------------------------------
 // -------------------------------------------- start popup: ---------------------------------------------
+
+// вывод всех попап в список:
+const popupArr = document.querySelectorAll('.popup');
+if (popupArr.length > 0) {
+  console.log('тест');
+  popupArr.forEach((popup) => {
+    const li = document.createElement('li');
+    li.classList.add('popup__item');
+    li.innerHTML = `<button style="margin-bottom: 10px" class="btn btn_gray popup-link" data-popup="${popup.getAttribute('id')}">${popup.getAttribute('id')}</button>`;
+    document.querySelector('.popup__list').appendChild(li)
+
+    popup.classList.add('active')
+  })
+}
+
+
 const popupLinks = document.querySelectorAll(".popup-link");
 const lockPadding = document.querySelectorAll(".lock-padding");
 // const btn = document.querySelector(".project-btn");
@@ -1184,7 +1200,7 @@ if (popupLinks.length > 0) {
     const popupLink = popupLinks[index];
     popupLink.addEventListener("click", function (e) {
       console.log("тест");
-      const popupName = popupLink.getAttribute("href").replace("#", "");
+      const popupName = popupLink.getAttribute("data-popup");
       console.log(popupName);
       const curentPopup = document.getElementById(popupName); //получаем id попап-окна
 

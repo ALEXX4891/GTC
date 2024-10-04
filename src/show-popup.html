@@ -1,36 +1,49 @@
 @@include('./html/header.html', {
 "title": "Popup",
-"page": "Popup",
+"page": "pop",
 })
 
-  <main class="main ">
-    <section class="section ">
-      <div class="container ">
-        <ul class="popup__list">
+<main class="main ">
+  <section class="section ">
+    <div class="container ">
+      <ul class="popup__list">
+        <label class="radio">
+          <input class="radio__input"  type="radio" name="check1">
+          <span class="radio__mark"></span>
+          <span class="radio__title">2 секции</span>
+        </label>
+        <label class="radio">
+          <input class="radio__input"  type="radio" name="check1">
+          <span class="radio__mark"></span>
+          <span class="radio__title">2 секции</span>
+        </label>
 
-        </ul>
-      </div>
-    </section>
-  </main>
+        <label class="radio radio_disabled">
+          <input class="radio__input"  type="radio" name="check1">
+          <span class="radio__mark"></span>
+          <span class="radio__title">2 секции</span>
+        </label>
 
-  <script>
-    window.onload = () => {
-      const popupArr = document.querySelectorAll('.popup');
-      if (popupArr.length > 0) {
-        popupArr.forEach((popup) => {
-          const li = document.createElement('li');
-          li.classList.add('popup__item');
-          li.innerHTML = `<button style="margin-bottom: 10px" class="btn btn_light-green popup-link" href="#${popup.getAttribute('id')}">${popup.getAttribute('id')}</button>`;
-          document.querySelector('.popup__list').appendChild(li)
-          
-          popup.classList.add('active')
-        })
-      }
-    }
+        <label class="checkbox">
+          <input class="checkbox__input"  type="checkbox" name="check">
+          <span class="checkbox__mark"></span>
+          <span class="checkbox__title">АИ-92</span>
+        </label>
 
-  </script>
+        <label class="checkbox">
+          <input class="checkbox__input"  type="checkbox" name="check">
+          <span class="checkbox__mark"></span>
+          <span class="checkbox__title">АИ-92</span>
+        </label>
+
+        <label class="checkbox checkbox_disabled">
+          <input class="checkbox__input"  type="checkbox" name="check">
+          <span class="checkbox__mark"></span>
+          <span class="checkbox__title">АИ-92</span>
+        </label>
+
+      </ul>
+    </div>
+  </section>
+</main>
 @@include('./html/footer.html', {})
-
-
-
-
