@@ -84,7 +84,7 @@
   </div>
 </div>
 
-<div class="popup" id="popup-consult">
+<div class="popup popup-consult" id="popup-consult">
   <div class="popup__body">
     <div class="popup__content">
       <h2 class="popup__title">
@@ -93,43 +93,17 @@
 
       <p class="popup__desc">
         Оставьте данные и мы свяжемся с Вами
-для обсуждения возникших вопросов
+        для обсуждения возникших вопросов
       </p>
       
-      <form class="popup__form">
-        <div class="form__label-block">
-          <label class="form__label">
-            <span class="form__label-text">
-              ФИО
-            </span>
-            <span class="form__label-star">
-              *
-            </span>
-
-            <input class="form__input form__input_name" type="text" name="name" placeholder="Введите имя" required>
-          </label>
-          <label class="form__label">
-            <span class="form__label-text">
-              Телефон
-            </span>
-            <span class="form__label-star">
-              *
-            </span>
-            <input class="form__input form__input_phone" type="tel" name="phone" placeholder="7" required value="7">
-          </label>
-          <label class="form__label">
-            <span class="form__label-text">
-              E-mail
-            </span>
-            <input class="form__input form__input_email" type="email" name="email" placeholder="Введите e-mail">
-          </label>
-          <label class="form__label form__label_textarea">
-            <span class="form__label-text">
-              Комментарий
-            </span>
-            <textarea class="form__input form__input_textarea" name="text" placeholder="Сообщение"></textarea>
-          </label>
-        </div>
+      <form class="popup__form form">
+        <fieldset class="form__wrap">
+            <input class="form__input form__input_name _req input" type="text" name="name" placeholder="Имя*">
+            <input class="form__input form__input_phone _req input" type="tel" name="phone" placeholder="Телефон*">
+            <input class="form__input form__input_organization _req input" type="text" name="organization" placeholder="Название организации">
+            <input class="form__input form__input_email input" type="email" name="email" placeholder="Почта">
+            <textarea class="form__input form__input_textarea input input_textarea" name="text" placeholder="Комментарий"></textarea>
+        </fieldset>
 
         <button class="btn btn_dark form__btn">
           Отправить заявку
@@ -146,207 +120,13 @@
           </a>
         </div>
 
-        <span class="popup__close-btn popup-close">
-          <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L21 16M21 1L1 16" stroke="#8C8C8C" stroke-width="1.5" />
-          </svg>
-        </span>
-
-    </div>
-  </div>
-</div>
-
-<div class="popup" id="popup-request">
-  <div class="popup__body">
-    <div class="popup__content popup-request">
-      <form class="request" id="request-form">
-        <h3 class="request__title">
-          Оставить заявку
-        </h3>
-
-        <div class="request__label-block">
-          <label class="request__label request__label_readonly">
-            <span class="request__label-text">
-              Планировка
-            </span>
-            <span class="request__label-star">
-              *
-            </span>
-
-            <input class="request__input request__input_apartment" type="text" name="apartment"
-              placeholder="Выберите квартиру" readonly required>
-          </label>
-          <label class="request__label">
-            <span class="request__label-text">
-              ФИО
-            </span>
-            <span class="request__label-star">
-              *
-            </span>
-
-            <input class="request__input request__input_name" type="text" name="name" placeholder="Введите имя"
-              required>
-          </label>
-          <label class="request__label">
-            <span class="request__label-text">
-              Телефон
-            </span>
-            <span class="request__label-star">
-              *
-            </span>
-            <input class="request__input request__input_phone" type="tel" name="phone" placeholder="7" required
-              value="7">
-          </label>
-          <label class="request__label">
-            <span class="request__label-text">
-              E-mail
-            </span>
-            <input class="request__input request__input_email" type="email" name="email" placeholder="Введите e-mail">
-          </label>
-          <label class="request__label request__label_textarea">
-            <span class="request__label-text">
-              Комментарий
-            </span>
-            <textarea class="request__input request__input_textarea" name="text" placeholder="Сообщение"></textarea>
-          </label>
-        </div>
-
-        <button class="btn btn_dark request__btn">
-          Отправить
+        <button class="popup__close-btn popup-close">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.0002 10L30.0001 29.9999" stroke="#222222" stroke-width="1.73911" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.0001 29.9998L30 9.99992" stroke="#222222" stroke-width="1.73911" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>          
         </button>
 
-
-        <div class="request__agreement-wrap">
-          <span class="request__agreement-text">
-            Нажимая кнопку «Отправить», вы соглашаетесь с
-          </span>
-          <a class="request__agreement-link" href="agreement.html" target="_blank">
-            условиями обработки персональных данных
-          </a>
-        </div>
-
-        <span class="request__close-btn popup-close">
-          <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L21 16M21 1L1 16" stroke="#8C8C8C" stroke-width="1.5" />
-          </svg>
-        </span>
-
-      </form>
     </div>
   </div>
 </div>
-
-<div class="popup" id="popup-notification">
-  <div class="popup__body">
-    <div class="popup__content popup-notification">
-      <form class="notification" id="notification-form">
-        <h3 class="notification__title">
-          Форма уведомления
-        </h3>
-
-        <div class="notification__label-block">
-
-          <label class="notification__label notification__agency">
-            <span class="notification__label-text">
-              Агенство недвижимости
-            </span>
-            <span class="notification__label-star">
-              *
-            </span>
-            <input class="notification__input notification__input_agency" type="text" name="agency"
-              placeholder="Введите название агенства" required>
-          </label>
-
-          <label class="notification__label notification__agent-name">
-            <span class="notification__label-text">
-              ФИО агента
-            </span>
-            <span class="notification__label-star">
-              *
-            </span>
-            <input class="notification__input notification__input_agent-name" type="text" name="agent-name"
-              placeholder="Введите имя" required>
-          </label>
-
-          <label class="notification__label notification__agent-phone">
-            <span class="notification__label-text">
-              Телефон агента
-            </span>
-            <span class="notification__label-star">
-              *
-            </span>
-            <input class="notification__input notification__input_agent-phone" type="tel" name="agent-phone"
-              placeholder="7" required value="7">
-          </label>
-
-          <label class="notification__label notification__client-name">
-            <span class="notification__label-text">
-              ФИО клиента
-            </span>
-            <span class="notification__label-star">
-              *
-            </span>
-            <input class="notification__input notification__input_client-name" type="text" name="client-name"
-              placeholder="Введите имя" required>
-          </label>
-
-          <label class="notification__label notification__client-phone">
-            <span class="notification__label-text">
-              Телефон клиента
-            </span>
-            <span class="notification__label-star">
-              *
-            </span>
-            <input class="notification__input notification__input_client-phone" type="tel" name="client-phone"
-              placeholder="7" required value="7">
-          </label>
-
-          <label class="notification__label notification__label_textarea">
-            <span class="notification__label-text">
-              Сообщение
-            </span>
-            <textarea class="notification__input notification__input_textarea" name="text"
-              placeholder="Сообщение"></textarea>
-          </label>
-        </div>
-
-        <button class="btn btn_green notification__btn">
-          Отправить
-        </button>
-
-
-        <div class="notification__agreement-wrap">
-          <span class="notification__agreement-text">
-            Нажимая кнопку «Отправить», вы соглашаетесь с
-          </span>
-          <a class="notification__agreement-link" href="agreement.html" target="_blank">
-            условиями обработки персональных данных
-          </a>
-        </div>
-
-        <span class="notification__close-btn popup-close">
-          <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L21 16M21 1L1 16" stroke="#8C8C8C" stroke-width="1.5" />
-          </svg>
-        </span>
-
-      </form>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="popup" id="filter">
-  <div class="popup__body">
-    <div class="popup__content popup__promo filter">
-      <button class="promo__close">
-        <svg width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1L28.5 21M1 21L28.5 1" stroke="black" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-
-
