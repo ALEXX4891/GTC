@@ -366,6 +366,12 @@ a {
 .input:hover {
   border: 1px solid #125A5D;
 }
+.input.input_textarea {
+  resize: vertical;
+  width: 100%;
+  height: 150px;
+  outline: none;
+}
 
 .radio {
   position: relative;
@@ -921,12 +927,22 @@ a {
 .popup.popup-consult .popup__content .form .form__wrap .input {
   width: 100%;
 }
-.popup.popup-consult .popup__content .form .form__wrap .input_textarea {
-  resize: vertical;
-  width: 100%;
-  height: 150px;
+.popup.popup-offer .popup__content {
+  max-width: 519px;
+  gap: 15px;
 }
-
+.popup.popup-offer .popup__content .form {
+  display: grid;
+  gap: 30px;
+}
+.popup.popup-offer .popup__content .form .form__wrap {
+  display: grid;
+  gap: 14px;
+  padding-top: 15px;
+}
+.popup.popup-offer .popup__content .form .form__wrap .input {
+  width: 100%;
+}
 .burger {
   position: relative;
 }
