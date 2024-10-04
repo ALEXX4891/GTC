@@ -1696,8 +1696,8 @@ const burger = document.querySelector(".burger");
 // console.log(burger);
 
 if (burger) {
-  const popup = document.querySelector("#menu");
-  const popupContent = popup.querySelector(".popup__content.menu");
+  const popup = document.querySelector("#popup-menu");
+  const popupContent = popup.querySelector(".popup__content");
 
   const content = document.querySelector(".header__nav");
   const headerNavWrap = document.querySelector(".header__nav-wrap");
@@ -1741,7 +1741,7 @@ if (burger) {
   });
 
   // закрытие popup по кнопке
-  const popupCloseIcon = popup.querySelector(".promo__close");
+  const popupCloseIcon = popup.querySelector(".popup__close");
   popupCloseIcon.addEventListener("click", function (e) {
     popupClose(popup);
     bodyUnLock();
