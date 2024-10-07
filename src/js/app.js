@@ -1181,7 +1181,10 @@ if (popupArr.length > 0) {
     const li = document.createElement('li');
     li.classList.add('popup__item');
     li.innerHTML = `<button style="margin-bottom: 10px" class="btn btn_gray popup-link" data-popup="${popup.getAttribute('id')}">${popup.getAttribute('id')}</button>`;
-    document.querySelector('.popup__list').appendChild(li)
+    if (document.querySelector('.popup__list')) {
+      document.querySelector('.popup__list').appendChild(li)
+    }
+
 
     popup.classList.add('active')
   })
@@ -1897,7 +1900,7 @@ if (cookieCloseBtn) {
 // -------------------------------------------- start Карта ---------------------------------------------
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-const map = document.getElementById("map");
+const map = document.getElementById("map1");
 const map2 = document.getElementById("mapTwo");
 if (map || map2) {
   initMap();
