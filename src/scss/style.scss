@@ -1460,49 +1460,61 @@ a {
       .popup__content {
 
         .popup__content-wrap {
-          margin: 0 0 20px;
+          margin: 0 0 20px;  
 
-          .popup__type-list {
+          .popup__type-img {
+            height: 255px;
+            margin-bottom: 25px;
+
+            & img {
+              object-fit: contain;
+            }
+          }
+
+          .popup__title {
+          }
+
+          .popup__title_calc {
+          }
+
+          .popup__range-slider {
+          }
+          
+          .popup__range-slider {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            padding: 0 10px;
+            gap: 10px;
           }
-  
-          .popup__type-item {
-              padding: 0px;  
-              border: 1px solid #ECECEC;
-              border-radius: 10px;
-              overflow: hidden;
-              background-color: transparent;
-              transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-              cursor: pointer;
-  
-              &:hover {
-                background-color: #CDFAF6;
-                border-color: #CDFAF6;
+
+          .popup__range-list {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: space-between;
+
+
+            .popup__range-number {
+              font-family: OpenSans;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 21.79px;
+              text-align: center;
+              color: #222222;
+              opacity: 0.6;
+
+              &.popup__range-number_active {
+                opacity: 1;
               }
-  
-              &.popup__type-item_active {
-                background-color: #CDFAF6;
-                border-color: #CDFAF6;
-              }
-  
+            }
           }
-  
-          .popup__card-img {
-            height: 138px;
+
+          
+          .popup__range-wrap {
+
+            .popup__range {
+              width: 100%;
+            }
           }
-  
-          .popup__card-title {
-            padding: 10px;
-            font-family: OpenSans;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 21.79px;
-            text-align: center;
-            color: #222222;
-          }
+
+
         }
 
         .popup__btn-wrap { 

@@ -906,7 +906,8 @@
       <ul class="popup__progress progress">
         <li class="progress__item progress__item_active"></li>
         <li class="progress__item progress__item_active"></li>
-        <li class="progress__item"></li>
+        <li class="progress__item progress__item_active"></li>
+
         <li class="progress__item"></li>
         <li class="progress__item"></li>
         <li class="progress__item"></li>
@@ -986,54 +987,70 @@
       <ul class="popup__progress progress">
         <li class="progress__item progress__item_active"></li>
         <li class="progress__item progress__item_active"></li>
-        <li class="progress__item"></li>
-        <li class="progress__item"></li>
+        <li class="progress__item progress__item_active"></li>
+        <li class="progress__item progress__item_active"></li>
+
         <li class="progress__item"></li>
         <li class="progress__item"></li>
         <li class="progress__item"></li>
       </ul>
 
       <div class="popup__content-wrap popup__content-wrap_type">
+
+        <div class="popup__type-img">
+          <img src="img/popup-type-img.png" alt="">
+        </div>
+
         <h2 class="popup__title popup__title_calc">
-          Тип исполнения АЗС
+          Объём резервуара, м3
         </h2>
 
-        <ul class="popup__type-list">
-          <li class="popup__type-item popup__type-item_active">
-            <div class="popup__card-img">
-              <img src="img/popup-card-type-1.png" alt="">
-            </div>
+        <div class="popup__range-slider">
+          <ul class="popup__range-list">
+            <li class="popup__range-number">
+              5
+            </li>
+            <li class="popup__range-number">
+              10
+            </li>
+            <li class="popup__range-number">
+              15
+            </li>
+            <li class="popup__range-number">
+              20
+            </li>
+            <li class="popup__range-number">
+              25
+            </li>
+            <li class="popup__range-number">
+              30
+            </li>
+            <li class="popup__range-number">
+              35
+            </li>
+            <li class="popup__range-number">
+              40
+            </li>
+            <li class="popup__range-number">
+              45
+            </li>
+            <li class="popup__range-number">
+              50
+            </li>
+            <li class="popup__range-number">
+              55
+            </li>
+            <li class="popup__range-number">
+              60
+            </li>
 
+          </ul>
 
-            <h3 class="popup__card-title">
-              Открытый технический отсек
-            </h3>
-          </li>
+          <div class="popup__range-wrap">
+            <input class="popup__range" type="range" min="5" max="60" value="5" step="5">
+          </div>
 
-          <li class="popup__type-item">
-            <div class="popup__card-img">
-              <img src="img/popup-card-type-2.png" alt="">
-            </div>
-
-
-            <h3 class="popup__card-title">
-              Закрытый технический отсек
-            </h3>
-          </li>
-
-          <li class="popup__type-item">
-            <div class="popup__card-img">
-              <img src="img/popup-card-type-3.png" alt="">
-            </div>
-
-
-            <h3 class="popup__card-title">
-              АЗС<br> в контейнере
-            </h3>
-          </li>
-
-        </ul>
-
+        </div>
       </div>
 
 
