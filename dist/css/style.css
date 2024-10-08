@@ -1314,6 +1314,226 @@ a {
 .popup.popup-calc_four .popup__body .popup__content .popup__btn-wrap .popup__step-btn {
   padding: 10.5px 40px;
 }
+.popup.popup-calc_five .popup__body .popup__content .popup__content-wrap {
+  margin: 0 0 20px;
+}
+.popup.popup-calc_five .popup__body .popup__content .popup__content-wrap .popup__type-img {
+  height: 255px;
+  margin-bottom: 25px;
+}
+.popup.popup-calc_five .popup__body .popup__content .popup__content-wrap .popup__type-img img {
+  object-fit: contain;
+}
+.popup.popup-calc_five .popup__body .popup__content .popup__content-wrap .popup__checkbox-wrap {
+  display: grid;
+  gap: 15px;
+}
+.popup.popup-calc_five .popup__body .popup__content .popup__content-wrap .popup__checkbox-wrap .popup__checkbox-title {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.34px;
+  text-align: left;
+  color: #585858;
+}
+.popup.popup-calc_five .popup__body .popup__content .popup__content-wrap .popup__checkbox-wrap .popup__checkbox-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 5px;
+}
+.popup.popup-calc_five .popup__body .popup__content .popup__content-wrap .popup__radio-wrap {
+  display: grid;
+  gap: 15px;
+}
+.popup.popup-calc_five .popup__body .popup__content .popup__content-wrap .popup__radio-wrap .popup__radio-title {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.34px;
+  text-align: left;
+  color: #585858;
+}
+.popup.popup-calc_five .popup__body .popup__content .popup__content-wrap .popup__radio-wrap .popup__radio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 5px;
+}
+.popup.popup-calc_five .popup__body .popup__content .popup__content-wrap .popup__info-text {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.34px;
+  text-align: center;
+  color: #585858;
+  max-width: 420px;
+  justify-self: center;
+}
+.popup.popup-calc_five .popup__body .popup__content .popup__btn-wrap {
+  flex-flow: row nowrap;
+  padding: 0 10px;
+}
+.popup.popup-calc_five .popup__body .popup__content .popup__btn-wrap .popup__step-btn {
+  padding: 10.5px 40px;
+}
+.popup.popup-calc_six .popup__body .popup__content .popup__content-wrap {
+  margin: 0 0 20px;
+}
+.popup.popup-calc_six .popup__body .popup__content .popup__content-wrap .popup__type-img {
+  height: 255px;
+  margin-bottom: 25px;
+}
+.popup.popup-calc_six .popup__body .popup__content .popup__content-wrap .popup__type-img img {
+  object-fit: contain;
+}
+.popup.popup-calc_six .popup__body .popup__content .popup__content-wrap .popup__radio-wrap {
+  display: grid;
+  gap: 15px;
+}
+.popup.popup-calc_six .popup__body .popup__content .popup__content-wrap .popup__radio-wrap .popup__radio-title {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.34px;
+  text-align: left;
+  color: #585858;
+}
+.popup.popup-calc_six .popup__body .popup__content .popup__content-wrap .popup__radio-wrap .popup__radio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 5px;
+}
+.popup.popup-calc_six .popup__body .popup__content .popup__content-wrap .popup__info-text {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.34px;
+  text-align: center;
+  color: #585858;
+  max-width: 420px;
+  justify-self: center;
+}
+.popup.popup-calc_six .popup__body .popup__content .popup__btn-wrap {
+  flex-flow: row nowrap;
+  padding: 0 10px;
+}
+.popup.popup-calc_six .popup__body .popup__content .popup__btn-wrap .popup__step-btn {
+  padding: 10.5px 40px;
+}
+.popup.popup-calc_seven .popup__body .popup__content .popup__content-wrap {
+  margin: 0 0 20px;
+}
+.popup.popup-calc_seven .popup__body .popup__content .popup__content-wrap .popup__type-img {
+  height: 205px;
+  margin-bottom: 25px;
+}
+.popup.popup-calc_seven .popup__body .popup__content .popup__content-wrap .popup__type-img img {
+  object-fit: contain;
+}
+.popup.popup-calc_seven .popup__body .popup__content .popup__content-wrap .popup__radio-wrap {
+  display: grid;
+  gap: 15px;
+  max-width: 406px;
+  width: 100%;
+  justify-self: center;
+}
+.popup.popup-calc_seven .popup__body .popup__content .popup__content-wrap .popup__radio-wrap .popup__radio-title {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.34px;
+  text-align: left;
+  color: #585858;
+}
+.popup.popup-calc_seven .popup__body .popup__content .popup__content-wrap .popup__radio-wrap .popup__radio-list {
+  display: grid;
+  gap: 16px;
+  justify-content: start;
+  max-width: 600px;
+}
+.popup.popup-calc_seven .popup__body .popup__content .popup__content-wrap .popup__info-text {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.34px;
+  text-align: center;
+  color: #585858;
+  max-width: 420px;
+  justify-self: center;
+}
+.popup.popup-calc_seven .popup__body .popup__content .popup__btn-wrap {
+  flex-flow: row nowrap;
+  padding: 0 10px;
+}
+.popup.popup-calc_seven .popup__body .popup__content .popup__btn-wrap .popup__step-btn {
+  padding: 10.5px 40px;
+}
+.popup.popup-calc_result .popup__body .popup__content {
+  max-width: 986px;
+  gap: 50px;
+}
+.popup.popup-calc_result .popup__body .popup__content .popup__content-top {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 46% 51%;
+  justify-content: space-between;
+  gap: 3%;
+}
+.popup.popup-calc_result .popup__body .popup__content .popup__title_calc {
+  justify-self: start;
+}
+.popup.popup-calc_result .popup__body .popup__content .popup__result-text-block {
+  display: grid;
+  gap: 25px;
+  align-content: center;
+}
+.popup.popup-calc_result .popup__body .popup__content .popup__result-text-block .popup__result-price {
+  font-family: Gilroy;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.85px;
+  text-align: left;
+  color: #117074;
+  margin-bottom: 30px;
+}
+.popup.popup-calc_result .popup__body .popup__content .popup__content-bot {
+  display: grid;
+  gap: 25px;
+}
+.popup.popup-calc_result .popup__body .popup__content .popup__text-wrap {
+  display: grid;
+  gap: 15px;
+}
+.popup.popup-calc_result .popup__body .popup__content .popup__text-title {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.05px;
+  text-align: left;
+  color: #052B2E;
+}
+.popup.popup-calc_result .popup__body .popup__content .popup__text-desc {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #585858;
+}
+.popup.popup-calc_result .popup__body .popup__content .popup__spec-item {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #585858;
+}
+.popup.popup-calc_result .popup__body .popup__content .popup__btn-wrap {
+  flex-flow: row nowrap;
+  padding: 0;
+}
+.popup.popup-calc_result .popup__body .popup__content .popup__btn-wrap .popup__step-btn {
+  padding: 10.5px 40px;
+}
 
 .burger {
   position: relative;
