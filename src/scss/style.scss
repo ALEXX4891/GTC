@@ -952,8 +952,6 @@ a {
           top: 15px;
         }
 
-        
-
         &::after {
           // content: "";
           // position: absolute;
@@ -1090,6 +1088,24 @@ a {
     }
   }
 
+  &.popup-success {
+    .popup__content {
+      justify-content: center;
+      justify-items: center;
+    }
+    .popup__title {
+      text-align: center !important;
+    }
+    .popup__desc {
+      text-align: center !important;
+
+    }
+    .popup__close-btn {
+    }
+    .popup-close {
+    }
+  }
+
   &.popup-consult {
     .popup__content {
       max-width: 519px;
@@ -1159,13 +1175,11 @@ a {
           max-width: 796px;
           padding: 85px 35px 35px;
           gap: 40px;
-
         }
 
         @media (max-width: 660px) {
           padding: 85px 15px 15px;
           gap: 30px;
-
         }
 
         .off-card__img {
@@ -1199,13 +1213,11 @@ a {
 
         @media (max-width: 1060px) {
           padding: 80px 40px 40px;
-
         }
 
         @media (max-width: 660px) {
           padding: 80px 30px 30px;
           gap: 45px;
-
         }
 
         .progress {
@@ -1216,7 +1228,6 @@ a {
 
           @media (max-width: 660px) {
             margin-bottom: 5px;
-
           }
         }
         .progress__item {
@@ -1265,7 +1276,6 @@ a {
               padding: 11.5px 20px;
               max-width: 100%;
               width: 100%;
-              
             }
           }
         }
@@ -1276,7 +1286,6 @@ a {
   &.popup-calc_two {
     .popup__body {
       .popup__content {
-
         .popup__content-wrap {
           max-width: 486px;
           .popup__btn-wrap_temp {
@@ -1284,7 +1293,7 @@ a {
             grid-auto-flow: column;
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
-      
+
             .popup__btn_temp {
               display: grid;
               gap: 10px;
@@ -1292,52 +1301,51 @@ a {
               justify-content: center;
               padding: 15px 10px;
               width: 100%;
-      
+
               & svg path {
                 fill: #117074;
                 transition: fill 0.3s ease-in-out;
               }
-      
+
               &:hover {
                 & svg path {
                   fill: #fff;
                 }
               }
-      
+
               &.popup__btn_temp_active {
                 background: #11a0a3;
                 color: #fff;
-      
+
                 & svg path {
                   fill: #fff;
                 }
               }
             }
-      
+
             .popup__icon-wrap {
               display: grid;
               grid-auto-flow: column;
               gap: 10px;
-      
+
               & svg {
                 width: 24px;
                 height: auto;
-      
+
                 @media (max-width: 660px) {
                   width: 16px;
                 }
               }
             }
-      
+
             .popup__step-btn {
-      
             }
           }
           .popup__recommended-wrap {
             display: grid;
             gap: 15px;
             margin-bottom: 20px;
-      
+
             @media (max-width: 660px) {
               margin-bottom: 0;
             }
@@ -1356,7 +1364,6 @@ a {
             gap: 25px;
             justify-content: start;
             margin-bottom: 10px;
-            
           }
           .popup__recommended-desc {
             font-family: OpenSans;
@@ -1364,37 +1371,32 @@ a {
             font-weight: 400;
             line-height: 16.34px;
             color: #585858;
-      
+
             &.popup__recommended-desc_active {
-              color: #FAB502;
+              color: #fab502;
             }
-      
+
             @media (max-width: 660px) {
               text-align: center;
             }
           }
         }
 
-        .popup__btn-wrap { 
-          flex-flow: row nowrap;   
-          padding: 0 10px;      
+        .popup__btn-wrap {
+          flex-flow: row nowrap;
+          padding: 0 10px;
 
           .popup__step-btn {
             padding: 10.5px 40px;
-
           }
         }
       }
     }
-
-
-
   }
 
   &.popup-calc_three {
     .popup__body {
       .popup__content {
-
         .popup__content-wrap {
           margin: 0 0 20px;
 
@@ -1404,32 +1406,31 @@ a {
             gap: 15px;
             padding: 0 10px;
           }
-  
+
           .popup__type-item {
-              padding: 0px;  
-              border: 1px solid #ECECEC;
-              border-radius: 10px;
-              overflow: hidden;
-              background-color: transparent;
-              transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-              cursor: pointer;
-  
-              &:hover {
-                background-color: #CDFAF6;
-                border-color: #CDFAF6;
-              }
-  
-              &.popup__type-item_active {
-                background-color: #CDFAF6;
-                border-color: #CDFAF6;
-              }
-  
+            padding: 0px;
+            border: 1px solid #ececec;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: transparent;
+            transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #cdfaf6;
+              border-color: #cdfaf6;
+            }
+
+            &.popup__type-item_active {
+              background-color: #cdfaf6;
+              border-color: #cdfaf6;
+            }
           }
-  
+
           .popup__card-img {
             height: 138px;
           }
-  
+
           .popup__card-title {
             padding: 10px;
             font-family: OpenSans;
@@ -1441,16 +1442,14 @@ a {
           }
         }
 
-        .popup__btn-wrap { 
-          flex-flow: row nowrap;   
-          padding: 0 10px;      
+        .popup__btn-wrap {
+          flex-flow: row nowrap;
+          padding: 0 10px;
 
           .popup__step-btn {
             padding: 10.5px 40px;
-
           }
         }
-
       }
     }
   }
@@ -1458,9 +1457,8 @@ a {
   &.popup-calc_four {
     .popup__body {
       .popup__content {
-
         .popup__content-wrap {
-          margin: 0 0 20px;  
+          margin: 0 0 20px;
 
           .popup__type-img {
             height: 255px;
@@ -1470,7 +1468,7 @@ a {
               object-fit: contain;
             }
           }
-          
+
           .popup__range-slider {
             display: grid;
             gap: 10px;
@@ -1480,7 +1478,6 @@ a {
             display: grid;
             grid-auto-flow: column;
             justify-content: space-between;
-
 
             .popup__range-number {
               font-family: OpenSans;
@@ -1496,27 +1493,22 @@ a {
               }
             }
           }
-          
-          .popup__range-wrap {
 
+          .popup__range-wrap {
             .popup__range {
               width: 100%;
             }
           }
-
-
         }
 
-        .popup__btn-wrap { 
-          flex-flow: row nowrap;   
-          padding: 0 10px;      
+        .popup__btn-wrap {
+          flex-flow: row nowrap;
+          padding: 0 10px;
 
           .popup__step-btn {
             padding: 10.5px 40px;
-
           }
         }
-
       }
     }
   }
@@ -1524,9 +1516,8 @@ a {
   &.popup-calc_five {
     .popup__body {
       .popup__content {
-
         .popup__content-wrap {
-          margin: 0 0 20px;  
+          margin: 0 0 20px;
 
           .popup__type-img {
             height: 255px;
@@ -1540,7 +1531,6 @@ a {
           .popup__checkbox-wrap {
             display: grid;
             gap: 15px;
-
 
             .popup__checkbox-title {
               font-family: OpenSans;
@@ -1556,7 +1546,6 @@ a {
 
               gap: 5px;
               // justify-content: start;
-
 
               .popup__checkbox-item {
               }
@@ -1615,13 +1604,12 @@ a {
           }
         }
 
-        .popup__btn-wrap { 
-          flex-flow: row nowrap;   
-          padding: 0 10px;      
+        .popup__btn-wrap {
+          flex-flow: row nowrap;
+          padding: 0 10px;
 
           .popup__step-btn {
             padding: 10.5px 40px;
-
           }
         }
       }
@@ -1631,9 +1619,8 @@ a {
   &.popup-calc_six {
     .popup__body {
       .popup__content {
-
         .popup__content-wrap {
-          margin: 0 0 20px;  
+          margin: 0 0 20px;
 
           .popup__type-img {
             height: 255px;
@@ -1687,13 +1674,12 @@ a {
           }
         }
 
-        .popup__btn-wrap { 
-          flex-flow: row nowrap;   
-          padding: 0 10px;      
+        .popup__btn-wrap {
+          flex-flow: row nowrap;
+          padding: 0 10px;
 
           .popup__step-btn {
             padding: 10.5px 40px;
-
           }
         }
       }
@@ -1703,9 +1689,8 @@ a {
   &.popup-calc_seven {
     .popup__body {
       .popup__content {
-
         .popup__content-wrap {
-          margin: 0 0 20px;  
+          margin: 0 0 20px;
 
           .popup__type-img {
             height: 205px;
@@ -1762,13 +1747,16 @@ a {
           }
         }
 
-        .popup__btn-wrap { 
-          flex-flow: row nowrap;   
-          padding: 0 10px;      
+        .popup__btn-wrap {
+          flex-flow: row nowrap;
+          padding: 0 10px;
+
+          @media (max-width: 660px) {
+            flex-flow: column nowrap;
+          }
 
           .popup__step-btn {
             padding: 10.5px 40px;
-
           }
         }
       }
@@ -1781,19 +1769,48 @@ a {
         max-width: 986px;
         gap: 50px;
 
+        @media (max-width: 980px) {
+          gap: 45px;
+        }
+
+        @media (max-width: 660px) {
+          gap: 40px;
+        }
+
         .popup__content-top {
           display: grid;
           grid-auto-flow: column;
           grid-template-columns: 46% 51%;
           justify-content: space-between;
           gap: 3%;
+
+          @media (max-width: 980px) {
+            grid-template-columns: 49% 48%;
+            justify-content: space-between;
+            gap: 3%;
+          }
+
+          @media (max-width: 660px) {
+            grid-template-columns: 1fr;
+          grid-auto-flow: row;
+
+          }
         }
 
         .popup__title_calc {
-          justify-self: start;          
+          justify-self: start;
+
+          @media (max-width: 980px) {
+            text-align: left;
+          }
         }
-        
+
         .popup__result-img {
+          height: 143px;
+        }
+
+        .popup__result-img img {
+          object-fit: contain;
         }
         .popup__result-text-block {
           display: grid;
@@ -1811,37 +1828,45 @@ a {
           }
         }
 
-
         .popup__content-bot {
           display: grid;
-  gap: 25px
+          gap: 25px;
+
+          
+        @media (max-width: 660px) {
+          gap: 20px;
+        }
         }
         .popup__text-wrap {
           display: grid;
-  gap: 15px;
+          gap: 15px;
         }
         .popup__text-wrap_desc {
         }
         .popup__text-title {
           font-family: Gilroy;
-font-size: 18px;
-font-weight: 600;
-line-height: 22.05px;
-text-align: left;
-color: #052B2E;
-
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 22.05px;
+          text-align: left;
+          color: #052b2e;
         }
         .popup__text-desc {
           font-family: OpenSans;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-color: #585858;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          color: #585858;
         }
         .popup__text-wrap_specifications {
         }
         .popup__spec-list {
+          // display: grid;
+
+          @media (max-width: 980px) {
+            // gap: 10px;
+          }
         }
         .popup__spec-item {
           font-family: OpenSans;
@@ -1850,24 +1875,33 @@ color: #585858;
           line-height: 24px;
           text-align: left;
           color: #585858;
+
+          @media (max-width: 980px) {
+            line-height: 23px;
+          }
         }
 
+        .popup__btn-wrap_top {
+          flex-flow: row nowrap;
+          padding: 0;
+          gap: 15px;
 
-
-        .popup__btn-wrap { 
-          flex-flow: row nowrap;   
-          padding: 0;      
+          @media (max-width: 980px) {
+            flex-flow: column;
+          }
 
           .popup__step-btn {
             padding: 10.5px 40px;
 
+            @media (max-width: 980px) {
+              width: 100%;
+            }
           }
         }
       }
     }
   }
 }
-
 
 .burger {
   position: relative;
