@@ -1220,6 +1220,11 @@ a {
           gap: 45px;
         }
 
+        @media (max-width: 370px) {
+          padding: 80px 10px 30px;
+          gap: 45px;
+        }
+
         .progress {
           display: grid;
           grid-auto-flow: column;
@@ -1388,6 +1393,10 @@ a {
 
           .popup__step-btn {
             padding: 10.5px 40px;
+
+            @media (max-width: 660px) { 
+              padding: 10.5px 10.5px;
+            }
           }
         }
       }
@@ -1448,6 +1457,10 @@ a {
 
           .popup__step-btn {
             padding: 10.5px 40px;
+
+            @media (max-width: 660px) { 
+              padding: 10.5px 10.5px;
+            }
           }
         }
       }
@@ -1507,6 +1520,10 @@ a {
 
           .popup__step-btn {
             padding: 10.5px 40px;
+
+            @media (max-width: 660px) { 
+              padding: 10.5px 10.5px;
+            }
           }
         }
       }
@@ -1610,6 +1627,10 @@ a {
 
           .popup__step-btn {
             padding: 10.5px 40px;
+
+            @media (max-width: 660px) { 
+              padding: 10.5px 10.5px;
+            }
           }
         }
       }
@@ -1680,6 +1701,10 @@ a {
 
           .popup__step-btn {
             padding: 10.5px 40px;
+
+            @media (max-width: 660px) { 
+              padding: 10.5px 10.5px;
+            }
           }
         }
       }
@@ -1757,6 +1782,10 @@ a {
 
           .popup__step-btn {
             padding: 10.5px 40px;
+
+            @media (max-width: 660px) { 
+              padding: 10.5px 10.5px;
+            }
           }
         }
       }
@@ -1892,6 +1921,8 @@ a {
 
           .popup__step-btn {
             padding: 10.5px 40px;
+
+
 
             @media (max-width: 980px) {
               width: 100%;

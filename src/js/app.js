@@ -3068,3 +3068,154 @@ if (picInput) {
   });
 }
 // -------------------------------------- end показ превью --------------------------
+
+// -------------------------------------- start Url Query --------------------------
+function getParam(param){
+  return new URLSearchParams(window.location.search).get(param);
+}
+
+function parseUrlQuery() {
+  // console.log("*************** Старт функции parseUrlQuery ***************");
+  let urlParams = new URLSearchParams(window.location.search);
+
+
+
+  // const urlParams = new URLSearchParams(window.location.search);
+  const filterArr = [];
+  const res = [];
+  urlParams.forEach((value, key) => {
+    filterArr.push({ name: key, value: value });
+  });
+  // console.log("filterArr", filterArr);
+
+  //   [
+  //     {
+  //         "name": "project",
+  //         "value": "Все"
+  //     },
+  //     {
+  //         "name": "house",
+  //         "value": "2"
+  //     },
+  //     {
+  //         "name": "section",
+  //         "value": "2"
+  //     },
+  //     {
+  //         "name": "rooms",
+  //         "value": "2"
+  //     },
+  //     {
+  //         "name": "date",
+  //         "value": "IV квартал 2025"
+  //     },
+  //     {
+  //         "name": "floor",
+  //         "value": "2-4"
+  //     },
+  //     {
+  //         "name": "cost",
+  //         "value": "2330000-6260000"
+  //     },
+  //     {
+  //         "name": "square",
+  //         "value": "61-81"
+  //     }
+  // ]
+
+  if (filterArr.find((item) => item.name === "project")) {
+    const projectFilter = filterArr.find((item) => item.name === "project").value;
+    res.push({
+      name: "Проект",
+      value: projectFilter,
+    });
+  }
+
+  if (filterArr.find((item) => item.name === "rooms")) {
+    const roomsFilter = filterArr.find((item) => item.name === "rooms").value;
+    res.push({
+      name: "Комнат",
+      value: roomsFilter.split(",").map(Number),
+    });
+  }
+
+  if (filterArr.find((item) => item.name === "square")) {
+    const squareFilter = filterArr.find((item) => item.name === "square").value;
+    res.push({
+      name: "Площадь, м2",
+      value: {
+        from: squareFilter.split("-")[0],
+        to: squareFilter.split("-")[1],
+      },
+    });
+  }
+
+  if (filterArr.find((item) => item.name === "cost")) {
+    const costFilter = filterArr.find((item) => item.name === "cost").value;
+    res.push({
+      name: "Стоимость, ₽",
+      value: {
+        from: costFilter.split("-")[0],
+        to: costFilter.split("-")[1],
+      },
+    });
+  }
+
+  if (filterArr.find((item) => item.name === "house")) {
+    const houseFilter = filterArr.find((item) => item.name === "house").value;
+    res.push({
+      name: "Дом",
+      value: houseFilter,
+    });
+  }
+
+  if (filterArr.find((item) => item.name === "section")) {
+    const sectionFilter = filterArr.find((item) => item.name === "section").value;
+    res.push({
+      name: "Секция",
+      value: sectionFilter,
+    });
+  }
+
+  if (filterArr.find((item) => item.name === "date")) {
+    const dateFilter = filterArr.find((item) => item.name === "date").value;
+    res.push({
+      name: "Срок сдачи",
+      value: dateFilter,
+    });
+  }
+
+  if (filterArr.find((item) => item.name === "floor")) {
+    const floorFilter = filterArr.find((item) => item.name === "floor").value;
+    res.push({
+      name: "Этаж",
+      value: {
+        from: floorFilter.split("-")[0],
+        to: floorFilter.split("-")[1],
+      },
+    });
+  }
+
+  if (filterArr.find((item) => item.name.includes("option"))) {
+    const btnsFilter = [];
+    filterArr.forEach((item) => {
+      if (item.name.includes("option")) {
+        btnsFilter.push(item.name);
+      }
+    });
+    res.push({
+      name: "btns",
+      value: btnsFilter,
+    });
+  }
+
+  return res;
+}
+
+function setUrlQueryParam(param, value) {
+  console.log("*************** Старт функции setUrlQuery ***************");
+  urlParams.set(param, value);
+  // showActiveItem(input);    
+  window.history.pushState({}, "", "?" + urlParams.toString());
+  // apartRender(allApartsInfo);
+}
