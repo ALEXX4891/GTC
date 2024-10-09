@@ -709,63 +709,37 @@ a {
 
 .cookie {
   position: fixed;
-  left: 0;
-  bottom: 0;
-  padding: 20px 110px 20px 20px;
-  display: flex;
-  width: 100%;
-  border-top: 1px solid #333333;
-  font-size: 1.3em;
-  justify-content: center;
-  background-color: #fff;
-  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  padding: 10px 30px;
+  gap: 15px;
+  display: grid;
+  grid-auto-flow: column;
   align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  z-index: 10000;
+  width: 100%;
+  max-width: 988px;
 
-  .cookie__wrapper {
-    display: flex;
-    margin-right: 20px;
-    color: #333333;
-    align-items: center;
-  }
-  .cookie__wrapper p {
-    margin-right: 5px;
-    font-style: normal;
-    font-weight: 400;
+  .cookie__text {
+    font-family: OpenSans;
     font-size: 18px;
-    line-height: 100%;
-  }
-  .cookie__wrapper a {
-    color: #333333;
-    text-decoration: none;
-    font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 100%;
+    line-height: 24.51px;
+    text-align: left;
+    color: #222;
+
+    @media (max-width: 660px) {
+      font-size: 14px;
+      line-height: 19.07px;
+    }
   }
-  .cookie__wrapper a:hover {
-    color: #333333;
-    text-decoration: underline;
-  }
+
   .cookie__btn {
-    color: #008ed7;
-    cursor: pointer;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-  }
-  .cookie__close {
-    position: absolute;
-    right: 0;
-    // top: 50%;
-    // transform: translateY(-40%);
-    // width: 12px;
-    cursor: pointer;
-    font-family: "Noto Sans Display";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 100%;
+    padding: 5px 16px;
   }
 }
 
@@ -908,9 +882,6 @@ a {
     justify-content: center;
     // align-items: center;
 
-    // TODO удалить:
-    align-items: start;
-
     padding: 30px 10px;
 
     .popup__content {
@@ -922,6 +893,10 @@ a {
       padding: 50px;
       background: #ffffff;
       border-radius: 10px;
+
+      @media (max-width: 360px) {
+        padding: 20px 10px;
+      }
 
       .popup__title {
         font-family: Gilroy;
