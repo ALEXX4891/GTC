@@ -20,6 +20,39 @@ if (header) {
 }
 // ---------------------------------- end menu ----------------------------------
 
+// ---------------------------------- start плавающие кнопки: ----------------------------------
+
+// кнопка вверх:
+const btnToUp = document.querySelector(".btn-go-up");
+if (btnToUp) {
+  document.addEventListener("scroll", () => {
+    if (window.scrollY > 600) {
+      btnToUp.classList.remove("btn-go-up_hide");
+    } else {
+      btnToUp.classList.add("btn-go-up_hide");
+    }
+  });
+
+  btnToUp.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}
+
+// кнопка социал:
+
+const socialBtn = document.querySelector(".social-btn"); 
+
+if (socialBtn) {
+  const socialBlock = document.querySelector(".social-btn__wrap");
+  socialBtn.addEventListener("click", () => {
+    socialBtn.classList.toggle("social-btn_active");
+    socialBlock.classList.toggle("social-btn__wrap_active");
+  });
+
+}
 // ---------------------------------- start отправка и валидация формы ----------------------------------
 
 const formAll = document.querySelectorAll(".os-form");
