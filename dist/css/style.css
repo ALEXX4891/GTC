@@ -2620,7 +2620,7 @@ a {
   line-height: 29.96px;
   text-align: left;
   color: #585858;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 @media (max-width: 1060px) {
   .glavnaya .offers .container .offers__slider-block .offers__slider-title {
@@ -3568,7 +3568,6 @@ a {
 .glavnaya .geo .container .geo__map-block {
   width: 100%;
   height: 600px;
-  background: #11a0a3;
 }
 @media (max-width: 1060px) {
   .glavnaya .geo .container .geo__map-block {
@@ -3579,6 +3578,18 @@ a {
   .glavnaya .geo .container .geo__map-block {
     height: 315px;
   }
+}
+.glavnaya .geo .container .geo__map-block .markerElement {
+  width: max-content;
+}
+.glavnaya .geo .container .geo__map-block .marker-wrap {
+  width: max-content;
+  position: relative;
+}
+.glavnaya .geo .container .geo__map-block .marker {
+  position: relative;
+  transform: translate(-37%, -90%);
+  /* cursor: pointer; */
 }
 .glavnaya .consultations {
   padding: 0;
