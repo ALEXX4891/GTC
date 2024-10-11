@@ -2650,6 +2650,25 @@ a {
   display: grid;
   place-items: center;
   transition: background-color 0.3s ease-in-out;
+  z-index: 1000;
+
+
+    @media (max-width: 960px) {
+      left: 20px;
+  }
+
+  @media (max-width: 660px) {
+      left: 10px;
+        width: 48px;
+  height: 48px;
+  }
+
+    & svg {
+    @media (max-width: 660px) {
+      width: 26.5px;
+      height: 26.5px;
+      }
+  }
 
   & svg path {
     stroke: #117074;
@@ -2675,6 +2694,17 @@ a {
   width: 58px;
   height: 58px;
   transition: all 0.5s ease-in-out;
+  z-index: 1000;
+
+  @media (max-width: 960px) {
+      right: 20px;
+  }
+
+  @media (max-width: 660px) {
+      right: 10px;
+              width: 48px;
+  height: 48px;
+  }
 
   .social-btn__wrap {
     position: absolute;
@@ -2691,11 +2721,21 @@ a {
     &.social-btn__wrap_active {
       opacity: 1;
       height: calc(58px + 5px + 58px + 5px + 58px);
+
+      @media (max-width: 660px) {
+        height: calc(48px + 5px + 48px + 5px + 48px);
+        
+      }
     }
 
     .social-btn__link {
       width: 58px;
       height: 58px;
+
+        @media (max-width: 660px) {
+        width: 48px;
+        height: 48px;
+  }
     }
     .social-btn__link_watsapp {
     }
@@ -2706,12 +2746,17 @@ a {
   }
 
   .social-btn {
-    width: 58px;
-    height: 58px;
+    width: 100%;
+    height: 100%;
     transition: all 0.5s ease-in-out;
 
     .social-btn__icon {
-      &.social-btn__icon_hide {
+      &.social-btn__icon_hide {  
+        @media (max-width: 660px) {
+          width: 20px;
+          height: 20px;
+        }
+
         display: none;
       }
 
@@ -2729,6 +2774,7 @@ a {
         &.social-btn__icon_hide {
           display: block;
         }
+
         &.social-btn__icon_show {
           display: none;
         }
@@ -2745,6 +2791,13 @@ a {
   display: grid;
   place-items: center;
   transition: background-color 0.3s ease-in-out;
+
+  & svg {
+    @media (max-width: 660px) {
+      width: 26.5px;
+      height: 26.5px;
+      }
+  }
 
   & .svg-fill path {
     fill: #117074;

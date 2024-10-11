@@ -2245,6 +2245,25 @@ a {
   display: grid;
   place-items: center;
   transition: background-color 0.3s ease-in-out;
+  z-index: 1000;
+}
+@media (max-width: 960px) {
+  .btn-go-up {
+    left: 20px;
+  }
+}
+@media (max-width: 660px) {
+  .btn-go-up {
+    left: 10px;
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 660px) {
+  .btn-go-up svg {
+    width: 26.5px;
+    height: 26.5px;
+  }
 }
 .btn-go-up svg path {
   stroke: #117074;
@@ -2267,6 +2286,19 @@ a {
   width: 58px;
   height: 58px;
   transition: all 0.5s ease-in-out;
+  z-index: 1000;
+}
+@media (max-width: 960px) {
+  .social-btn-block {
+    right: 20px;
+  }
+}
+@media (max-width: 660px) {
+  .social-btn-block {
+    right: 10px;
+    width: 48px;
+    height: 48px;
+  }
 }
 .social-btn-block .social-btn__wrap {
   position: absolute;
@@ -2284,17 +2316,34 @@ a {
   opacity: 1;
   height: 184px;
 }
+@media (max-width: 660px) {
+  .social-btn-block .social-btn__wrap.social-btn__wrap_active {
+    height: 154px;
+  }
+}
 .social-btn-block .social-btn__wrap .social-btn__link {
   width: 58px;
   height: 58px;
 }
+@media (max-width: 660px) {
+  .social-btn-block .social-btn__wrap .social-btn__link {
+    width: 48px;
+    height: 48px;
+  }
+}
 .social-btn-block .social-btn {
-  width: 58px;
-  height: 58px;
+  width: 100%;
+  height: 100%;
   transition: all 0.5s ease-in-out;
 }
 .social-btn-block .social-btn .social-btn__icon.social-btn__icon_hide {
   display: none;
+}
+@media (max-width: 660px) {
+  .social-btn-block .social-btn .social-btn__icon.social-btn__icon_hide {
+    width: 20px;
+    height: 20px;
+  }
 }
 .social-btn-block .social-btn .social-btn__icon.social-btn__icon_show {
   display: block;
@@ -2320,6 +2369,12 @@ a {
   display: grid;
   place-items: center;
   transition: background-color 0.3s ease-in-out;
+}
+@media (max-width: 660px) {
+  .circle-btn svg {
+    width: 26.5px;
+    height: 26.5px;
+  }
 }
 .circle-btn .svg-fill path {
   fill: #117074;
