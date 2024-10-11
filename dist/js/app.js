@@ -194,9 +194,9 @@ new Swiper(".banner_swiper", {
     nextEl: ".swiper-button-next-banner",
     prevEl: ".swiper-button-prev-banner",
   },
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
   // pagination: {
   //   el: ".swiper-pagination",
   //   clickable: true,
@@ -745,9 +745,10 @@ const map = document.getElementById("map");
 const map2 = document.getElementById("mapTwo");
 if (map) {
   initMap();
+
   // Главная функция, вызывается при запуске скрипта
   async function initMap() {
-    //     // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
+    // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
     await ymaps3.ready;
 
     // Импорт модулей для элементов управления на карте
@@ -820,7 +821,7 @@ if (map) {
       const markersArr = [
         // { coordinates: [59.849966, 30.302950], title: "Детский сад", dataId: 1, img: "/assets/img/pin1.svg" },
         // { coordinates: [30.302950, 59.849966], title: "Офис", dataId: 1, img: "/assets/img/pin1.svg" },
-        { coordinates: [30.302950, 59.849966], title: "Setl center", dataId: 1, img: "/dist/img/pin.svg" },
+        { coordinates: [30.302950, 59.849966], title: "Setl center", dataId: 1, img: "img/pin.svg" },
 
       ];
 
@@ -1200,3 +1201,41 @@ function setUrlQueryParam(param, value) {
   window.history.pushState({}, "", "?" + urlParams.toString());
   // apartRender(allApartsInfo);
 }
+
+// -------------------------------------- end Url Query -----------------------------
+// -------------------------------------- start Калькулятор --------------------------
+const btnTemp = document.querySelectorAll(".popup__btn_temp");
+if (btnTemp.length) {
+  btnTemp.forEach((btn) => {
+    btn.addEventListener("click", function () {
+
+      btnTemp.forEach((item) => {
+        item.classList.remove("popup__btn_temp_active");
+      })
+
+      btn.classList.add("popup__btn_temp_active");
+
+
+      const name = btn.dataset.name;
+      const value = btn.dataset.value;
+      console.log(name, ' = ', value);
+      // setUrlQueryParam(name, value);
+    });
+  });
+}
+
+const heater = document.querySelector(".heater");
+if (heater) {
+  heater.addEventListener("click", function (e) {
+    e.preventDefault();
+    const heaterDesc = document.querySelector(".heater-desc");
+    if (heater.classList.contains("checkbox_disabled")) {
+      heaterDesc.classList.add("popup__recommended-desc_active");
+    } else {
+      heaterDesc.classList.remove("popup__recommended-desc_active");
+    }
+    // heater.classList.toggle("heater_active");
+  });
+}
+
+// -------------------------------------- end Калькулятор -----------------------------

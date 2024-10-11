@@ -272,6 +272,7 @@ a {
   font-size: 32px;
   font-weight: 600;
   line-height: 39.2px;
+  color: #052B2E;
 }
 @media (max-width: 1060px) {
   .section-title {
@@ -469,7 +470,6 @@ a {
   color: #117074;
 }
 .checkbox.checkbox_disabled {
-  pointer-events: none;
   opacity: 0.4;
 }
 
@@ -2326,6 +2326,7 @@ a {
   font-weight: 600;
   line-height: 51.45px;
   text-align: left;
+  color: #222;
 }
 @media (max-width: 660px) {
   .glavnaya .banner .banner__container .banner__left-block .banner__text-block .banner__title {
@@ -2341,6 +2342,7 @@ a {
   line-height: 26.4px;
   text-align: left;
   max-width: 420px;
+  color: #222;
 }
 @media (max-width: 660px) {
   .glavnaya .banner .banner__container .banner__left-block .banner__text-block .banner__text {
@@ -2538,6 +2540,7 @@ a {
   font-weight: 500;
   line-height: 23.54px;
   text-align: left;
+  color: #222;
 }
 @media (max-width: 660px) {
   .glavnaya .banner .banner__container .banner__right-block .banner__list .banner__item-text {
@@ -2631,9 +2634,6 @@ a {
     padding: 15px 15px 21px 15px;
   }
 }
-.glavnaya .advantages .container .advantages__list .adv-card:hover {
-  box-shadow: 0 0 0 rgba(30, 109, 109, 0.06), 0 0 0 rgba(8, 72, 72, 0.07), inset 4px 4px 8px rgba(30, 109, 109, 0.06), inset 1px 1px 3px rgba(8, 72, 72, 0.07);
-}
 .glavnaya .advantages .container .advantages__list .adv-card:hover svg path {
   fill: #fab502;
 }
@@ -2677,6 +2677,7 @@ a {
   justify-content: start;
   align-items: center;
   transition: gap 0.3s ease-in-out;
+  width: max-content;
 }
 .glavnaya .advantages .container .advantages__list .adv-card .adv-card-link svg path {
   fill: #117074;
@@ -3673,6 +3674,8 @@ a {
 .glavnaya .geo .container .geo__map-block {
   width: 100%;
   height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 @media (max-width: 1060px) {
   .glavnaya .geo .container .geo__map-block {
