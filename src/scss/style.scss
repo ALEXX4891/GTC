@@ -4686,6 +4686,12 @@ a {
           margin-bottom: 20px;
         }
 
+        @media (max-width: 660px) {
+          height: 280px;
+          padding: 0 0 30px;
+          margin-bottom: 20px;
+        }
+
         .news-item__slider {
           height: 100%;
           .news-item__slider-list {
@@ -4699,10 +4705,10 @@ a {
               top: 0;
               left: 50%;
               transform: translateX(-50%);
-              // object-fit: cover;
               height: 100%;
               width: auto;
-              // margin: 0 auto;
+              margin: 0 auto;
+              border-radius: 10px;
             }
           }
         }
@@ -4736,6 +4742,10 @@ a {
 
           @media (max-width: 660px) {
             top: 45%;
+          }
+
+          @media (max-width: 560px) {
+            display: none;
           }
 
           &.swiper-button-next {
