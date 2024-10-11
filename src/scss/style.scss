@@ -201,6 +201,9 @@ a {
 .section {
   margin: 0 auto;
   padding: 49px 20px;
+  // border-top: 70px solid transparent;
+  // margin-top: -70px;
+  position: relative;
 
   @media (max-width: 1060px) {
     padding: 39px 20px;
@@ -208,6 +211,14 @@ a {
 
   @media (max-width: 660px) {
     padding: 30px 10px;
+  }
+
+  // добавляем отступ сверху для якорной ссылки:
+  .section__ancor {
+    position: absolute;
+    top: -70px;
+    left: 0;
+    width: 100%;
   }
 }
 
@@ -249,7 +260,7 @@ a {
   font-size: 32px;
   font-weight: 600;
   line-height: 39.2px;
-  color: #052B2E;
+  color: #052b2e;
 
   @media (max-width: 1060px) {
     font-size: 30px;
@@ -1281,21 +1292,29 @@ a {
               justify-content: center;
               padding: 15px 10px;
               width: 100%;
+              border: 1px solid #ececec;
+              transition: border-color 0.3s ease-in-out;
+              background: #fff;
+              color: #222;
 
               & svg path {
                 fill: #117074;
-                transition: fill 0.3s ease-in-out;
+                // transition: fill 0.3s ease-in-out;
               }
 
               &:hover {
+                border: 1px solid rgba(#11A0A34D, 0.3);
+
                 & svg path {
-                  fill: #fff;
+                  // fill: #fff;
                 }
               }
 
               &.popup__btn_temp_active {
                 background: #11a0a3;
                 color: #fff;
+                border: 1px solid transparent;
+
 
                 & svg path {
                   fill: #fff;
@@ -1446,7 +1465,7 @@ a {
     .popup__body {
       .popup__content {
         .popup__content-wrap {
-          margin: 0 0 20px;
+          margin: 0 0 30px;
 
           .popup__type-img {
             height: 255px;
@@ -1460,6 +1479,7 @@ a {
           .popup__range-slider {
             display: grid;
             gap: 10px;
+            position: relative;
           }
 
           .popup__range-list {
@@ -1483,10 +1503,63 @@ a {
           }
 
           .popup__range-wrap {
+
             .popup__range {
               width: 100%;
             }
           }
+
+            .slider-container {
+              position: absolute;
+              top: calc(100% + 6px);
+              left: 0;
+              right: 0;
+              height: 4px;
+              // margin: 0 8px;
+    
+              .range-slider {
+                position: absolute;
+                left: 0%;
+                right: 0%;
+                height: 100%;
+                background: #FAB502;
+                border-radius: 2px;
+                z-index: 10;
+
+              }
+            }
+    
+            .range-inputs-wrap {
+              position: absolute;
+              top: calc(100% + 6px);
+              left: 0;
+              right: 0;
+              height: 4px;
+              // margin: 0 8px;
+              background: rgba(#11A0A3, 0.2);
+              border-radius: 2px;
+    
+              & input {
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: 100%;
+                background: none;
+                pointer-events: none;
+                cursor: pointer;
+                -webkit-appearance: none;
+                z-index: 100;
+              }
+    
+              input[type="range"]::-webkit-slider-thumb {
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                background: #125A5D;
+                pointer-events: auto;
+                -webkit-appearance: none;
+              }
+            }
         }
 
         .popup__btn-wrap {
@@ -2573,7 +2646,7 @@ a {
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ecfcfa;
   display: grid;
   place-items: center;
   transition: background-color 0.3s ease-in-out;
@@ -2668,7 +2741,7 @@ a {
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ecfcfa;
   display: grid;
   place-items: center;
   transition: background-color 0.3s ease-in-out;
@@ -2762,7 +2835,6 @@ a {
             text-align: left;
             max-width: 420px;
             color: #222;
-
 
             @media (max-width: 660px) {
               font-size: 18px;
@@ -2942,7 +3014,7 @@ a {
             transition: box-shadow 0.3s ease-in-out;
 
             &:hover {
-              box-shadow: none;
+              // box-shadow: none;
             }
 
             @media (max-width: 660px) {
@@ -3159,7 +3231,7 @@ a {
   }
 
   .offers {
-    // padding: 49px 20px 0px;
+    padding: 49px 20px 80px;
     overflow: hidden;
     .container {
       display: grid;
@@ -3266,6 +3338,9 @@ a {
   .solutions {
     background: linear-gradient(103.66deg, #f0fdfb 27.06%, #cdfaf6 103.06%);
     padding: 100px 20px;
+    border-top: initial;
+    margin-top: initial;
+    // box-sizing: content-box;
 
     @media (max-width: 1060px) {
       padding: 80px 20px;
@@ -3536,10 +3611,10 @@ a {
             cursor: pointer;
             font-family: Gilroy;
             font-size: 24px;
-            font-weight: 400;
+            font-weight: 500;
             line-height: 28.8px;
             text-align: center;
-            color: #222;
+            color: rgba(#222, 0.5);
 
             @media (max-width: 1060px) {
               font-size: 22px;
@@ -3653,6 +3728,7 @@ a {
         font-weight: 400;
         line-height: 28.8px;
         text-align: center;
+        color: #222;
 
         @media (max-width: 1060px) {
           font-size: 22px;
@@ -3956,8 +4032,18 @@ a {
           box-shadow: 17px 18px 10px rgba(8, 43, 43, 0.01), 9px 10px 8px rgba(8, 43, 43, 0.04),
             4px 4px 6px rgba(8, 43, 43, 0.06), 1px 1px 3px rgba(8, 43, 43, 0.07);
 
+          transition: background-color 0.3s ease-in-out;
+
           @media (max-width: 660px) {
             grid-template-columns: 30% 70%;
+          }
+
+          &:hover {
+            background: #f0fdfb;
+
+            .team-card__img img {
+              transform: scale(1.1);
+            }
           }
 
           .team-card__img {
@@ -3965,6 +4051,11 @@ a {
             width: 242px;
             border-radius: 5px;
             overflow: hidden;
+
+            & img {
+              transform: scale(1);
+              transition: transform 0.3s ease-in-out;
+            }
 
             @media (max-width: 660px) {
               width: 100%;
@@ -4500,6 +4591,7 @@ a {
 
             .news-page__item-btn {
               border-radius: 10px;
+              margin-top: 50px;
             }
           }
         }
@@ -4647,12 +4739,16 @@ a {
           }
 
           &.swiper-button-next {
+            right: -5px;
+
             @media (max-width: 660px) {
               right: 0;
             }
           }
 
           &.swiper-button-prev {
+            left: -5px;
+
             @media (max-width: 660px) {
               left: 0;
             }

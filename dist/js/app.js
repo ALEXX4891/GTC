@@ -674,7 +674,7 @@ if (burger) {
 
 
 
-$(".phone").mask("7(999) 999 99 99");
+$(".phone").mask("8(999) 999 99 99");
 // console.log(urlParams);
 
 // -------------------------------------------- start Куки: ---------------------------------------------
@@ -1239,3 +1239,170 @@ if (heater) {
 }
 
 // -------------------------------------- end Калькулятор -----------------------------
+
+// -------------------------------------------- start range-slider: ---------------------------------------------
+
+const slider = document.querySelector(".popup__range-slider");
+if (slider) {
+  rangeSliderInit(slider, 5, 5, 60);
+}
+
+function rangeSliderInit(slider, gap, minRange, maxRange) {
+  const rangeSlider = slider.querySelector(".range-slider");
+  // текстовые инпуты:
+  // const priceInputs = slider.querySelectorAll(
+  //   ".choice__slider-select .select__input"
+  // );
+  // const textInputMin = slider.querySelector(".select__input_from");
+  // const textInputMax = slider.querySelector(".select__input_to");
+  // console.log(priceInputs);
+  // рендж инпуты:
+  const rangeInputs = slider.querySelectorAll(".range-inputs-wrap input");
+  // const rangeInputMin = slider.querySelector(".min-range");
+  const rangeInputMax = slider.querySelector(".max-range");
+
+  // основные параметры:
+  gap = gap;
+  minRange = minRange;
+  maxRange = maxRange;
+
+  // присваиваем значения инпутам:
+  // textInputMin.min = minRange;
+  // textInputMax.min = minRange;
+  // rangeInputMin.min = minRange;
+  rangeInputMax.min = minRange;
+
+  // textInputMin.max = maxRange;
+  // textInputMax.max = maxRange;
+  // rangeInputMin.max = maxRange;
+  rangeInputMax.max = maxRange;
+
+  // textInputMin.step = gap;
+  // textInputMax.step = gap;
+  // rangeInputMin.step = gap;
+  rangeInputMax.step = gap;
+
+  // value должно стоять соследним!!!
+  // textInputMin.value = minRange;
+  // textInputMax.value = maxRange;
+  // rangeInputMin.value = minRange;
+  rangeInputMax.value = minRange;
+
+  // // обработка событий текстовых инпутов:
+  // priceInputs.forEach((input) => {
+  //   input.addEventListener("input", (e) => {
+  //     //получаем значения из текстовых инпутов:
+  //     let minVal = parseInt(textInputMin.value) ? parseInt(textInputMin.value) : minRange;
+  //     let maxVal = parseInt(textInputMax.value);
+  //     let diff = maxVal - minVal;
+
+  //     // ограничиваем значение min инпута:
+  //     // if (minVal < minRange) {
+  //     //   // textInputMin.value = minRange;
+  //     //   minVal = minRange;
+  //     // }
+
+  //     // ограничиваем значение max инпута:
+  //     if (maxVal > maxRange) {
+  //       // textInputMax.value = maxRange;
+  //       maxVal = maxRange;
+  //     }
+
+  //     // ограничиваем максимальное значение min инпута:
+  //     // if (e.target === textInputMin) {
+  //     //   if (minVal > maxVal - gap) {
+  //     //     // textInputMin.value = maxVal - gap;
+  //     //     minVal = maxVal - gap;
+  //     //   }
+  //     // }
+
+  //     // ограничиваем минимальное значение max инпута:
+  //     // if (e.target === textInputMax) {
+  //     //   if (maxVal < minVal + gap) {
+  //     //     // textInputMax.value = minVal + gap;
+  //     //     maxVal = minVal + gap;
+  //     //   }
+  //     // }
+
+  //     // вычисляем положение рендж инпутов:
+  //     if (diff >= gap) {
+  //       rangeInputMax.value = maxVal;
+  //       // rangeInputMin.value = minVal;
+  //       rangeSlider.style.right = `${
+  //         100 - ((maxVal - minRange) * 100) / (maxRange - minRange)
+  //       }%`;
+  //       // rangeSlider.style.left = `${
+  //       //   ((minVal - minRange) * 100) / (maxRange - minRange)
+  //       // }%`;
+  //     }
+  //   });
+  // });
+
+  rangeInputs.forEach((input) => {
+    input.addEventListener("input", (e) => {
+      console.log('-----------------****---------------');
+      console.log('gap', gap);
+      console.log('minRange', minRange);
+      console.log('maxRange', maxRange);
+      console.log('value', input.value);
+      //получаем значения из текстовых инпутов:
+      let minVal = minRange;
+      let maxVal = parseInt(rangeInputMax.value);
+      let diff = maxVal - minVal;
+      console.log('minVal', minVal);
+      console.log('maxVal', maxVal);
+      console.log('diff', diff);
+      
+      // ограничиваем значение min инпута:
+      // if (minVal < minRange) {
+      //   // rangeInputMin.value = minRange;
+      //   minVal = minRange;
+      // }
+      
+      // ограничиваем значение max инпута:
+      if (maxVal >= maxRange) {
+        rangeInputMax.value = maxRange;
+        maxVal = maxRange;
+      }
+
+      if (maxVal <= minVal) {
+        rangeInputMax.value = minRange;
+        maxVal = minRange;
+      }
+      
+      // ограничиваем максимальное значение min инпута:
+      // if (e.target === rangeInputMin) {
+        //   if (minVal > maxVal - gap) {
+      //     // rangeInputMin.value = maxVal - gap;
+      //     minVal = maxVal - gap;
+      //   }
+      // }
+
+      // // ограничиваем минимальное значение max инпута:
+      // if (e.target === rangeInputMax) {
+      //   if (maxVal < minVal + gap) {
+        //     rangeInputMax.value = minVal + gap;
+      //     maxVal = minVal + gap;
+      //   }
+      // }
+
+      // вычисляем положение рендж инпутов:
+      // if (diff >= gap) {
+        
+        // textInputMin.value = minVal;
+        // textInputMax.value = maxVal;
+        rangeSlider.style.right = `${
+          100 - ((maxVal - minRange) * 100) / (maxRange - minRange)
+          // ((minVal - minRange) * 100) / (maxRange - minRange)
+        }%`;
+        // rangeSlider.style.left = `${
+        //   ((minVal - minRange) * 100) / (maxRange - minRange)
+        // }%`;
+      // }
+    });
+  });
+}
+
+
+// -------------------------------------------- end range-slider: ---------------------------------------------
+
