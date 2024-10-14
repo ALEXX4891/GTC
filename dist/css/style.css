@@ -3643,6 +3643,16 @@ a {
     line-height: 18.5px;
   }
 }
+.glavnaya .team .container .team__list .team-card .team-card__text-block .contacts__item {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.3s ease-in-out;
+}
+.glavnaya .team .container .team__list .team-card .team-card__text-block .contacts__item:hover {
+  text-decoration-color: #222;
+}
 .glavnaya .partners {
   padding: 40px 20px 97px;
 }
@@ -3739,6 +3749,16 @@ a {
 .glavnaya .geo .container .geo__contacts-item {
   display: grid;
   gap: 10px;
+}
+.glavnaya .geo .container .contacts__item {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.3s ease-in-out;
+}
+.glavnaya .geo .container .contacts__item:hover {
+  text-decoration-color: #222;
 }
 .glavnaya .geo .container .geo__card-wrap {
   display: grid;

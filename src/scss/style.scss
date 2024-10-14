@@ -4170,6 +4170,18 @@ a {
                 line-height: 18.5px;
               }
             }
+
+            .contacts__item {        
+              text-decoration: underline;
+              text-underline-offset: 3px;
+              text-decoration-color: transparent;
+              text-decoration-thickness: 1px;
+              transition: text-decoration-color 0.3s ease-in-out;
+      
+              &:hover {
+                text-decoration-color: #222;
+              }
+            }
           }
         }
       }
@@ -4267,6 +4279,19 @@ a {
         display: grid;
         gap: 10px;
       }
+
+      .contacts__item {        
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-color: transparent;
+        text-decoration-thickness: 1px;
+        transition: text-decoration-color 0.3s ease-in-out;
+
+        &:hover {
+          text-decoration-color: #222;
+        }
+      }
+
       .geo__card-wrap {
         display: grid;
         gap: 8px;
