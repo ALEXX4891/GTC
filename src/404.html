@@ -1,43 +1,28 @@
-<!DOCTYPE html>
-<html lang="ru">
-@@include('./html/head.html', {
-"title": "Сибирь. Ошибка 404",
+@@include('./html/header.html', {
+"title": "ГТК",
+"page": "not-found-page",
 })
 
-<body class="not-found-page" data-page="404">
-  @@include('./html/header.html', {})
-
-  <main class="main">
-    <section class="section not-found">
-      <div class="container not-found__container">
-        <p class="not-found__img">
-          404
-        </p>
-
-        <h1 class="not-found__title">
-          Страница не найдена
-        </h1>
-        <p class="not-found__text">
-          Неправильно набран адрес или такой страницы не существует. Перейдите к выбору проектов или квартир. Там много всего интересного
-        </p>
-        <div class="not-found__btns-wrapper">
-          <a class="not-found__link btn btn_green" href="javascript:history.back()">
-            Проекты
-          </a>
-          <a class="not-found__link btn btn_light-green" href="index.html">
-            Квартиры
-          </a>
-        </div>
+<main class="main">
+  <section class="section not-found">
+    <div class="container not-found__container">
+      <div class="not-found__img">
+        <img src="img/banner_img1.png" alt="">
       </div>
-    </section>
-    <div>
 
+      <h2 class="not-found__number">
+        404
+      </h2>
+
+      <h1 class="not-found__title">
+        Страница не найдена
+      </h1>
+
+      <a class="not-found__link" href="index.html">
+        Вернуться на главную
+      </a>
     </div>
+  </section>
+</main>
 
-  </main>
-
-
-  @@include('./html/footer.html', {})
-</body>
-
-</html>
+@@include('./html/footer.html', {})
